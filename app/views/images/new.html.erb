@@ -6,8 +6,13 @@
 
   <%= f.label :description %>
   <br>
-  <%= f.text_field :description %>
+  <%= f.text_field :description, :value => "teclear algo aquí, ok?" %>
+  <br>
+  <%= f.label :likes_counter %>
+  <br>
+  <%= f.number_field :likes_counter, :value => 1, :min => 0 %>
   <br>
   <%= f.submit %>
+  <br>
 
 <% end %>
