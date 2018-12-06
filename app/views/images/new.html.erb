@@ -1,0 +1,13 @@
+<h1>Esta es la vista new Image</h1>
+
+<p>Hola desde mi vista new</p>
+
+<%= form_for :image, url: images_path do |f| %>
+
+  <%= f.label :description %>
+  <br>
+  <%= f.text_field :description %>
+  <br>
+  <%= f.submit %>
+
+<% end %>
