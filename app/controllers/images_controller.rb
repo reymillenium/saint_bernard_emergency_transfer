@@ -27,7 +27,7 @@ class ImagesController < ApplicationController
     # Redireccionamos hacia el path de la imagen recién creada (lo cambiamos hacia el listado de imagenes)
     # redirect_to @image
 
-    # Rendirizamos la vista view, pero obteniendo antes todas las variables que ella necesita (It works!)
+    # Renderizamos la vista view, pero obteniendo antes todas las variables que ella necesita (It works!)
     # @images = Image.all
     # render action: "index"
 
@@ -108,7 +108,7 @@ class ImagesController < ApplicationController
 
   def image_params
     # params.require(:image).permit(:description)
-    params.require(:image).permit(:description, :likes_counter)
+    params.require(:image).permit(:url, :description, :likes_counter)
   end
 
   # Implementamos el callback set_image, que se va a ejecutar antes de cada acción en que lo necesitemos (show, edit, update and destroy)

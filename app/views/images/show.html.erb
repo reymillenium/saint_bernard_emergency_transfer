@@ -1,16 +1,14 @@
-<h1>Mostrando la Image con id:<%= @image.id %></h1>
+<div class="container">
+  <h1>Image with id = <%= @image.id %></h1>
 
-<div>
+  <figure class="figure">
+    <!--  <img src="https://pbs.twimg.com/profile_images/446566229210181632/2IeTff-V_400x400.jpeg" class="figure-img img-fluid rounded">-->
+    <img src="<%= @image.url %>" class="figure-img img-fluid rounded">
+    <figcaption class="figure-caption"><%= link_to @image.description, @image %></figcaption>
+    <figcaption class="figure-caption"><b>ID:</b> <%= @image.id %>, <b>Likes:</b> <%= @image.likes_counter %>
+    </figcaption>
 
-  <p>
-    Ha sido almacenada una imagen con la descripción:
-    <br>
-    <%= @image.description %>
-    <br>
-    la cual posee <%= @image.likes_counter %> likes
-  </p>
-
+    <%= link_to 'Edit', edit_image_path(@image) %>
+    <%= link_to 'Delete', @image, method: :delete, data: {confirm: 'Are you sure?'} %>
+  </figure>
 </div>
-
-
-

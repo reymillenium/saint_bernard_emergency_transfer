@@ -1,14 +1,20 @@
-<%= form_for @image do |f| %>
+  <div class="form-group">
+    <%= form_for @image do |f| %>
+      <%= f.label :url %>
+      <br>
+      <%= f.text_field :url, class: 'form-control' %>
+      <br>
+      <%= f.label :description %>
+      <br>
+      <%= f.text_field :description, class: 'form-control' %>
+      <br>
+      <%= f.label :likes_counter %>
+      <br>
+      <%= f.number_field :likes_counter, class: 'form-control', :min => 0 %>
+      <br>
+      <%= f.submit 'Enviar', :class => 'btn btn-primary' %>
+      <br>
+    <% end %>
+  </div>
 
-  <%= f.label :description %>
-  <br>
-  <%= f.text_field :description %>
-  <br>
-  <%= f.label :likes_counter %>
-  <br>
-  <%= f.number_field :likes_counter, :min => 0 %>
-  <br>
-  <%= f.submit %>
-  <br>
 
-<% end %>

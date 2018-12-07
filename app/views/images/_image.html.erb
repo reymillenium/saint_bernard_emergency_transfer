@@ -1,29 +1,11 @@
-<%#= image.description %> <%#= link_to 'Edit', edit_image_path(image) %>
-<!--<br>-->
+<div class="row">
+  <figure class="figure">
+    <img src="<%= image.url %>" class="figure-img img-fluid rounded">
+    <figcaption class="figure-caption"><%= link_to image.description, image %></figcaption>
+    <figcaption class="figure-caption"><b>ID:</b> <%= image.id %>, <b>Likes:</b> <%= image.likes_counter %>
 
-<tr>
-  <td style="text-align: center;">
-    <%#= link_to image.id, edit_image_path(image) %>
-    <%= link_to image.id, image %>
-  </td>
-
-  <td style="text-align: left;">
-    <figure class="figure">
-      <img src="..." class="figure-img img-fluid rounded">
-      <figcaption class="figure-caption"><%= link_to image.description, image %></figcaption>
-    </figure>
-  </td>
-
-  <!--  <td style="text-align: left;">-->
-  <%#= link_to image.description, edit_image_path(image) %>
-  <%#= link_to image.description, image %>
-  <!--  </td>-->
-
-  <td style="text-align: center;">
-    <%#= link_to image.likes_counter, edit_image_path(image) %>
-    <%= link_to image.likes_counter, image %>
-  </td>
-
-  <td><%= link_to 'Edit', edit_image_path(image) %></td>
-  <td><%= link_to 'Delete', image, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-</tr>
+      <%= link_to 'Edit', edit_image_path(image) %>
+      <%= link_to 'Delete', image, method: :delete, data: {confirm: 'Are you sure?'} %>
+    </figcaption>
+  </figure>
+</div>

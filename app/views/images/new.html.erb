@@ -1,20 +1,7 @@
-<h1>Esta es la vista new Image</h1>
 
-<p>Hola desde mi vista new</p>
+<div class="container">
+  <h1>Agregar una imagen</h1>
 
-<%#= form_for :image, url: images_path do |f| %>
 
-  <%#= f.label :description %>
-<!--  <br>-->
-  <%#= f.text_field :description, :value => "teclear algo aquí, ok?" %>
-<!--  <br>-->
-  <%#= f.label :likes_counter %>
-<!--  <br>-->
-  <%#= f.number_field :likes_counter, :value => 1, :min => 0 %>
-<!--  <br>-->
-  <%#= f.submit %>
-<!--  <br>-->
-
-<%# end %>
-
-<%= render 'form' %>
+  <%= render 'form' %>
+</div>
