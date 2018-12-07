@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   resources :images
 
   # I create my first ROR route, to see how it works
-  get 'prueba', to: 'prueba#metodoprueba'
   get 'greetings_page', to: 'greeting#show_greetings'
 
 
