@@ -26,8 +26,16 @@ class ImagesController < ApplicationController
     # Almacenamos la Image en la BD
     @image.save
 
-    # Redireccionamos hacia el path de la imagen recién creada
-    redirect_to @image
+    # Redireccionamos hacia el path de la imagen recién creada (lo cambiamos hacia el listado de imagenes)
+    # redirect_to @image
+
+    # Rendirizamos la vista view, pero obteniendo antes todas las variables que ella necesita (It works!)
+    # @images = Image.all
+    # render action: "index"
+
+    # Redireccionamos hacia la accción index, la cual hace todas las cosas lo que la vista index necesita (It works!)
+    redirect_to action: "index"
+
   end
 
 
@@ -53,8 +61,11 @@ class ImagesController < ApplicationController
     # Actualizamos la imagen hallada en la BD con los nuevos datos recibidos desde el formulario de edición en la vista edit
     @image.update image_params
 
-    # Redireccionamos al usuario hacia el path de la imagen que acabamos de actualizar
-    redirect_to @image
+    # Redireccionamos al usuario hacia el path de la imagen que acabamos de actualizar (lo cambiamos hacia el listado de imagenes)
+    # redirect_to @image
+
+    # Redireccionamos hacia la accción index, la cual hace todas las cosas lo que la vista index necesita (It works!)
+    redirect_to action: "index"
   end
 
 
