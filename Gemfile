@@ -3,11 +3,23 @@ git_source(:github) {|repo| "https://github.com/#{repo}.git"}
 
 ruby '2.5.1'
 
-# Bootstrap 4
-gem 'bootstrap', '~> 4.1.3'
+# Bootstrap 4 (Pero la app tiene que usar Bootstrap 3!!)
+# gem 'bootstrap', '~> 4.1.3'
 
-# jQuery, necessary to use Bootstrap
+# This method uses boostrap 3. It also needs the sass-rails gem which is added to new Rails applications by default.
+gem 'bootstrap-sass', '~> 3.3.7'
+
+# jQuery, necessary to use Bootstrap 4 and 3
 gem 'jquery-rails'
+
+# CarrierWave, para la sabida de archivos. Permite relacionar un archivo con un modelo
+gem 'carrierwave'
+
+# Nos va a ayudar a realizar procesamientos dentro de nuestras imagenes (crear versiones del archivo, etc).
+# Es una interface de Ruby. Utiliza armagick que está escrito en C, que es en sí quien se encarga de procesar nuestras imagenes
+# Armagick viene instalado por defecto en OSX, pero no en Linux ni en Windows
+gem 'mini_magick'
+
 
 # # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'

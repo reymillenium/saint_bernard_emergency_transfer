@@ -15,6 +15,6 @@
 //= require turbolinks
 //= require_tree .
 
-//= require jquery3
-//= require popper
+// To use Boostrap 3
+//= require jquery
 //= require bootstrap-sprockets
