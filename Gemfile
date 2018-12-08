@@ -15,7 +15,7 @@ gem 'jquery-rails'
 # CarrierWave, para la sabida de archivos. Permite relacionar un archivo con un modelo
 gem 'carrierwave'
 
-# Nos va a ayudar a realizar procesamientos dentro de nuestras imagenes (crear versiones del archivo, etc).
+# Nos va a ayudar a realizar procesamientos dentro de nuestras imagenes (crear versiones del archivo [thumbnails, por ejemplo], etc).
 # Es una interface de Ruby. Utiliza armagick que está escrito en C, que es en sí quien se encarga de procesar nuestras imagenes
 # Armagick viene instalado por defecto en OSX, pero no en Linux ni en Windows
 gem 'mini_magick'
