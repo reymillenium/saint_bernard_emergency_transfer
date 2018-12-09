@@ -12,7 +12,7 @@ gem 'bootstrap-sass', '~> 3.3.7'
 # jQuery, necessary to use Bootstrap 4 and 3
 gem 'jquery-rails'
 
-# Usando attach
+# Usando attach (no pincha)
 # gem 'attach'
 
 # CarrierWave, para la sabida de archivos. Permite relacionar un archivo con un modelo (No me pincha bien)
