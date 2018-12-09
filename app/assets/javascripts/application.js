@@ -13,8 +13,13 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+
 
 // To use Boostrap 3
 //= require jquery
-//= require bootstrap-sprockets
+
+//= require jquery_ujs
+//= require bootstrap
+// = require bootstrap-sprockets
+
+

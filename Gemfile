@@ -24,6 +24,9 @@ gem 'jquery-rails'
 # No sirve
 # gem 'mini_magick'
 
+# Fontawesome (font icons)
+# gem "font-awesome-rails"
+gem "font-awesome-sass"
 
 # # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'

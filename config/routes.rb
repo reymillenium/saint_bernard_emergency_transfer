@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # I create my first ROR route, to see how it works
   get 'greetings_page', to: 'greeting#show_greetings'
 
-  # resources :patients
+  resources :patients
 
 
 end
