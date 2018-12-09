@@ -12,13 +12,17 @@ gem 'bootstrap-sass', '~> 3.3.7'
 # jQuery, necessary to use Bootstrap 4 and 3
 gem 'jquery-rails'
 
-# CarrierWave, para la sabida de archivos. Permite relacionar un archivo con un modelo
-gem 'carrierwave'
+# Usando attach
+# gem 'attach'
+
+# CarrierWave, para la sabida de archivos. Permite relacionar un archivo con un modelo (No me pincha bien)
+# gem 'carrierwave'
 
 # Nos va a ayudar a realizar procesamientos dentro de nuestras imagenes (crear versiones del archivo [thumbnails, por ejemplo], etc).
 # Es una interface de Ruby. Utiliza armagick que está escrito en C, que es en sí quien se encarga de procesar nuestras imagenes
-# Armagick viene instalado por defecto en OSX, pero no en Linux ni en Windows
-gem 'mini_magick'
+# RMagick viene instalado por defecto en OSX, pero no en Linux ni en Windows
+# No sirve
+# gem 'mini_magick'
 
 
 # # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

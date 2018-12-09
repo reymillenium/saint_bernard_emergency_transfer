@@ -3,7 +3,7 @@
 
   <figure class="figure">
     <!--  <img src="https://pbs.twimg.com/profile_images/446566229210181632/2IeTff-V_400x400.jpeg" class="figure-img img-fluid rounded">-->
-    <img src="<%= @image.url %>" class="figure-img img-fluid rounded">
+    <img src="<%= @image.picture %>" class="figure-img img-fluid rounded">
     <figcaption class="figure-caption"><%= link_to @image.description, @image %></figcaption>
     <figcaption class="figure-caption"><b>ID:</b> <%= @image.id %>, <b>Likes:</b> <%= @image.likes_counter %>
     </figcaption>

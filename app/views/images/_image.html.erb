@@ -1,6 +1,13 @@
-<div class="row">
+<div class="col-lg-3">
   <figure class="figure">
-    <img src="<%= image.url %>" class="figure-img img-fluid rounded">
+
+    <img src="<%= image.picture %>" class="figure-img img-fluid img-rounded" width="250px" height="250px">
+    <%#= image_tag image.picture.thumb.url %>
+    <%#= image_tag image.picture.url, class: 'figure-img img-fluid img-rounded' %>
+    <%#= image_tag image.picture(:thumb), class: 'figure-img img-fluid img-rounded' %>
+    <%#= image_tag image.picture(:thumb) if image.picture? %>
+    <%#= image_tag image.picture.url(:thumb), class: 'figure-img img-fluid img-rounded'%>
+
     <figcaption class="figure-caption"><%= link_to image.description, image %></figcaption>
     <figcaption class="figure-caption"><b>ID:</b> <%= image.id %>, <b>Likes:</b> <%= image.likes_counter %>
 

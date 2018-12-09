@@ -21,100 +21,108 @@ class ImagesController < ApplicationController
     # Creamos una variable de tipo Image y la rellenamos con los datos recibidos desde el formulario en image_params
     @image = Image.new image_params
 
-    # Almacenamos la Image en la BD
-    @image.save
 
-    # Redireccionamos hacia el path de la imagen recién creada (lo cambiamos hacia el listado de imagenes)
-    # redirect_to @image
+  #   if @image.save
+  #     render :show
+  # else
+  #   raise @image.errors
+  # end
 
-    # Renderizamos la vista view, pero obteniendo antes todas las variables que ella necesita (It works!)
-    # @images = Image.all
-    # render action: "index"
+  # Almacenamos la Image en la BD
+  @image.save
 
-    # Redireccionamos hacia la accción index, la cual hace todas las cosas lo que la vista index necesita (It works!)
-    # redirect_to action: "index"
+  # Redireccionamos hacia el path de la imagen recién creada (lo cambiamos hacia el listado de imagenes)
+  # redirect_to @image
 
-    # Otra forma de redireccionar (It works too!
-    redirect_to images_path
-  end
+  # Renderizamos la vista view, pero obteniendo antes todas las variables que ella necesita (It works!)
+  # @images = Image.all
+  # render action: "index"
 
+  # Redireccionamos hacia la accción index, la cual hace todas las cosas lo que la vista index necesita (It works!)
+  # redirect_to action: "index"
 
-  # ********************************************************************************************************************
-  # *                                           *** R E N D E R ***                                                    *
-  # ********************************************************************************************************************
-
-  # Muestra el listado de todas las Images creadas en la BD
-  def index
-    # Creo una variable y allí almaceno todas las Images en la BD
-    @images = Image.all
-  end
-
-  # Muestra la vista con los datos de una imagen
-  def show
-    # Buscamos la imagen en la BD y la almacenamos en una variable
-    # @image = Image.find params[:id]
-  end
+  # Otra forma de redireccionar (It works too!
+  redirect_to images_path
+end
 
 
-  # ********************************************************************************************************************
-  # *                                           *** U P D A T E ***                                                    *
-  # ********************************************************************************************************************
+# ********************************************************************************************************************
+# *                                           *** R E N D E R ***                                                    *
+# ********************************************************************************************************************
 
-  # Muestra la vista con un formulario de edición con los datos de una imagen para ser modificada
-  def edit
-    # Buscamos la imagen que queremos editar en la BD y la almacenamos en una variable
-    # @image = Image.find params[:id]
-  end
+# Muestra el listado de todas las Images creadas en la BD
+def index
+  # Creo una variable y allí almaceno todas las Images en la BD
+  @images = Image.all
+end
 
-  # Se va a encargar de actualizar la información en la BD, de la Image que estamos enviando desde el formulario de edición en la vista edit
-  def update
-    # Buscamos la imagen original en la Bd a partir del ID que estamos recibiendo
-    # @image = Image.find params[:id]
-
-    # Actualizamos la imagen hallada en la BD con los nuevos datos recibidos desde el formulario de edición en la vista edit
-    @image.update image_params
-
-    # Redireccionamos al usuario hacia el path de la imagen que acabamos de actualizar (lo cambiamos hacia el listado de imagenes)
-    # redirect_to @image
-
-    # Redireccionamos hacia la accción index, la cual hace todas las cosas lo que la vista index necesita (It works!)
-    # redirect_to action: "index"
-
-    # Otra forma de redireccionar (It works too!)
-    redirect_to images_path
-  end
+# Muestra la vista con los datos de una imagen
+def show
+  # Buscamos la imagen en la BD y la almacenamos en una variable
+  # @image = Image.find params[:id]
+end
 
 
-  # ********************************************************************************************************************
-  # *                                          *** D E S T R O Y ***                                                   *
-  # ********************************************************************************************************************
+# ********************************************************************************************************************
+# *                                           *** U P D A T E ***                                                    *
+# ********************************************************************************************************************
 
-  # Se encarga de destruir o eliminar en la BD una image que estamos enviando
-  def destroy
-    # Buscamos la imagen original en la Bd a partir del ID que estamos recibiendo
-    # @image = Image.find params[:id]
+# Muestra la vista con un formulario de edición con los datos de una imagen para ser modificada
+def edit
+  # Buscamos la imagen que queremos editar en la BD y la almacenamos en una variable
+  # @image = Image.find params[:id]
+end
 
-    # Destruimos la imagen en la BD
-    @image.destroy
+# Se va a encargar de actualizar la información en la BD, de la Image que estamos enviando desde el formulario de edición en la vista edit
+def update
+  # Buscamos la imagen original en la Bd a partir del ID que estamos recibiendo
+  # @image = Image.find params[:id]
 
-    # Redireccionamos hacia el listado de images (index)
-    # redirect_to action: "index"
+  # Actualizamos la imagen hallada en la BD con los nuevos datos recibidos desde el formulario de edición en la vista edit
+  @image.update image_params
 
-    # Otra forma de redireccionar (It works too!
-    redirect_to images_path
-  end
+  # Redireccionamos al usuario hacia el path de la imagen que acabamos de actualizar (lo cambiamos hacia el listado de imagenes)
+  # redirect_to @image
 
-  private
+  # Redireccionamos hacia la accción index, la cual hace todas las cosas lo que la vista index necesita (It works!)
+  # redirect_to action: "index"
 
-  def image_params
-    # params.require(:image).permit(:description)
-    params.require(:image).permit(:url, :description, :likes_counter)
-  end
+  # Otra forma de redireccionar (It works too!)
+  redirect_to images_path
+end
 
-  # Implementamos el callback set_image, que se va a ejecutar antes de cada acción en que lo necesitemos (show, edit, update and destroy)
-  def set_image
-    # Buscamos la imagen original en la Bd a partir del ID que estamos recibiendo
-    @image = Image.find params[:id]
-  end
+
+# ********************************************************************************************************************
+# *                                          *** D E S T R O Y ***                                                   *
+# ********************************************************************************************************************
+
+# Se encarga de destruir o eliminar en la BD una image que estamos enviando
+def destroy
+  # Buscamos la imagen original en la Bd a partir del ID que estamos recibiendo
+  # @image = Image.find params[:id]
+
+  # Destruimos la imagen en la BD
+  @image.destroy
+
+  # Redireccionamos hacia el listado de images (index)
+  # redirect_to action: "index"
+
+  # Otra forma de redireccionar (It works too!
+  redirect_to images_path
+end
+
+private
+
+def image_params
+  # params.require(:image).permit(:picture, :description, :likes_counter)
+  params.require(:image).permit :picture, :description, :likes_counter
+  # params.require(:image).permit({picture: []}, :description, :likes_counter)
+end
+
+# Implementamos el callback set_image, que se va a ejecutar antes de cada acción en que lo necesitemos (show, edit, update and destroy)
+def set_image
+  # Buscamos la imagen original en la Bd a partir del ID que estamos recibiendo
+  @image = Image.find params[:id]
+end
 
 end

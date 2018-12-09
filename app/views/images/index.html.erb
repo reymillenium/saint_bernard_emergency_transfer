@@ -17,7 +17,7 @@
           <thead class="thead-light">
           <tr>
             <th style="text-align: left;">ID</th>
-            <th style="text-align: left;">URL</th>
+            <th style="text-align: left;">Picture</th>
             <th style="text-align: left;">Descripción</th>
             <th style="text-align: center;">Likes</th>
             <th colspan="2"></th>
@@ -33,7 +33,7 @@
               </td>
 
               <td style="text-align: left;">
-                <%= link_to image.url, image %>
+                <%= link_to image.picture, image %>
               </td>
 
               <td style="text-align: left;">
@@ -64,9 +64,9 @@
 
   <h1>Images List, using a partial</h1>
 
-  <!--  <div class="row">-->
+    <div class="row">
   <%= render @images %>
-  <!--  </div>-->
+    </div>
 </div>
 
 
