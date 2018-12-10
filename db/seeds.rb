@@ -144,24 +144,211 @@ patients = Patient.create([
 
                                   # chronic_conditions (An array of Diagnosis)
                                   # chronic_conditions: [''],
-                                  chronic_conditions: 'An array of Diagnosis',
+                                  chronic_conditions: 'An array # 1 of Diagnosis',
 
                                   # medications (An array of MedicationOrders])
                                   # medications: [''],
-                                  medications: 'An array of MedicationOrders',
+                                  medications: 'An array # 1 of MedicationOrders',
 
                                   # diagnostic_procedures (An array of DiagnosticProcedures]])
                                   # diagnostic_procedures: [''],
-                                  diagnostic_procedures: 'An array of DiagnosticProcedures',
+                                  diagnostic_procedures: 'An array # 1 of DiagnosticProcedures',
 
                                   # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
                                   # diagnoses: [''],
-                                  diagnoses: 'Another array of Diagnosis',
+                                  diagnoses: 'Another array # 1 of Diagnosis',
 
                                   # treatments (An array of Treatments)
                                   # treatments: ['']
-                                  treatments: 'An array of Treatments'
+                                  treatments: 'An array # 1 of Treatments'
                               },
+
+                              # Patient # 2
+                              {
+                                  first_name: 'Reinier',
+                                  middle_name: '',
+                                  last_name: 'Garcia Ramos',
+                                  mr: '30998',
+                                  dob: DateTime.strptime("02/10/1980 03:00", "%m/%d/%Y %H:%M"),
+                                  gender: 'male',
+
+                                  # * Needs to exist at least one Admission on the DB before seeding this model
+                                  admission_id: '2',
+
+                                  # An array of allergies (each Allergy has a description text field)
+                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
+                                  allergies: 'hypersensitivity to Penicillin',
+
+                                  # chronic_conditions (An array of Diagnosis)
+                                  # chronic_conditions: [''],
+                                  chronic_conditions: 'An array # 2 of Diagnosis',
+
+                                  # medications (An array of MedicationOrders])
+                                  # medications: [''],
+                                  medications: 'An array # 2 of MedicationOrders',
+
+                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
+                                  # diagnostic_procedures: [''],
+                                  diagnostic_procedures: 'An array # 2 of DiagnosticProcedures',
+
+                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
+                                  # diagnoses: [''],
+                                  diagnoses: 'Another array # 2 of Diagnosis',
+
+                                  # treatments (An array of Treatments)
+                                  # treatments: ['']
+                                  treatments: 'An array # 2 of Treatments'
+                              },
+
+                              # Patient # 3
+                              {
+                                  first_name: 'Peter',
+                                  middle_name: '',
+                                  last_name: 'Shultz',
+                                  mr: '30999',
+                                  dob: DateTime.strptime("09/01/1979 14:00", "%m/%d/%Y %H:%M"),
+                                  gender: 'male',
+
+                                  # * Needs to exist at least one Admission on the DB before seeding this model
+                                  admission_id: '1',
+
+                                  # An array of allergies (each Allergy has a description text field)
+                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
+                                  allergies: 'ketchup intolerance',
+
+                                  # chronic_conditions (An array of Diagnosis)
+                                  # chronic_conditions: [''],
+                                  chronic_conditions: 'An array # 3 of Diagnosis',
+
+                                  # medications (An array of MedicationOrders])
+                                  # medications: [''],
+                                  medications: 'An array # 3 of MedicationOrders',
+
+                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
+                                  # diagnostic_procedures: [''],
+                                  diagnostic_procedures: 'An array # 3 of DiagnosticProcedures',
+
+                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
+                                  # diagnoses: [''],
+                                  diagnoses: 'Another array # 3 of Diagnosis',
+
+                                  # treatments (An array of Treatments)
+                                  # treatments: ['']
+                                  treatments: 'An array # 3 of Treatments'
+                              },
+
+                              # Patient # 4
+                              {
+                                  first_name: 'Amanda',
+                                  middle_name: '',
+                                  last_name: 'Gomez',
+                                  mr: '31000',
+                                  dob: DateTime.strptime("09/01/1983 17:00", "%m/%d/%Y %H:%M"),
+                                  gender: 'female',
+
+                                  # * Needs to exist at least one Admission on the DB before seeding this model
+                                  admission_id: '1',
+
+                                  # An array of allergies (each Allergy has a description text field)
+                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
+                                  allergies: 'paprika intolerance',
+
+                                  # chronic_conditions (An array of Diagnosis)
+                                  # chronic_conditions: [''],
+                                  chronic_conditions: 'An array # 4 of Diagnosis',
+
+                                  # medications (An array of MedicationOrders])
+                                  # medications: [''],
+                                  medications: 'An array # 4 of MedicationOrders',
+
+                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
+                                  # diagnostic_procedures: [''],
+                                  diagnostic_procedures: 'An array # 4 of DiagnosticProcedures',
+
+                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
+                                  # diagnoses: [''],
+                                  diagnoses: 'Another array # 4 of Diagnosis',
+
+                                  # treatments (An array of Treatments)
+                                  # treatments: ['']
+                                  treatments: 'An array # 4 of Treatments'
+                              },
+
+                              # Patient # 5
+                              {
+                                  first_name: 'Drake',
+                                  middle_name: '',
+                                  last_name: 'Johnson',
+                                  mr: '31001',
+                                  dob: DateTime.strptime("09/01/1959 17:00", "%m/%d/%Y %H:%M"),
+                                  gender: 'male',
+
+                                  # * Needs to exist at least one Admission on the DB before seeding this model
+                                  admission_id: '1',
+
+                                  # An array of allergies (each Allergy has a description text field)
+                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
+                                  allergies: 'hypersensitivity to the dog hair',
+
+                                  # chronic_conditions (An array of Diagnosis)
+                                  # chronic_conditions: [''],
+                                  chronic_conditions: 'An array # 5 of Diagnosis',
+
+                                  # medications (An array of MedicationOrders])
+                                  # medications: [''],
+                                  medications: 'An array # 5 of MedicationOrders',
+
+                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
+                                  # diagnostic_procedures: [''],
+                                  diagnostic_procedures: 'An array # 5 of DiagnosticProcedures',
+
+                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
+                                  # diagnoses: [''],
+                                  diagnoses: 'Another array # 5 of Diagnosis',
+
+                                  # treatments (An array of Treatments)
+                                  # treatments: ['']
+                                  treatments: 'An array # 5 of Treatments'
+                              },
+
+                              # Patient # 6
+                              {
+                                  first_name: 'Florence',
+                                  middle_name: '',
+                                  last_name: 'Smith',
+                                  mr: '31002',
+                                  dob: DateTime.strptime("09/01/1985 19:00", "%m/%d/%Y %H:%M"),
+                                  gender: 'female',
+
+                                  # * Needs to exist at least one Admission on the DB before seeding this model
+                                  admission_id: '1',
+
+                                  # An array of allergies (each Allergy has a description text field)
+                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
+                                  allergies: 'peanut intolerance',
+
+                                  # chronic_conditions (An array of Diagnosis)
+                                  # chronic_conditions: [''],
+                                  chronic_conditions: 'An array # 6 of Diagnosis',
+
+                                  # medications (An array of MedicationOrders])
+                                  # medications: [''],
+                                  medications: 'An array # 6 of MedicationOrders',
+
+                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
+                                  # diagnostic_procedures: [''],
+                                  diagnostic_procedures: 'An array # 6 of DiagnosticProcedures',
+
+                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
+                                  # diagnoses: [''],
+                                  diagnoses: 'Another array # 6 of Diagnosis',
+
+                                  # treatments (An array of Treatments)
+                                  # treatments: ['']
+                                  treatments: 'An array # 6 of Treatments'
+                              },
+
+
                           ])
 
 
