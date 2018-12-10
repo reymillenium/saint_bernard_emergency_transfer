@@ -118,8 +118,11 @@ allergies = Allergy.create([
                                {description: 'hypersensitivity to the chromium'},
                                {description: 'hypersensitivity to the cobalt'},
                                {description: 'hypersensitivity to the formaldehyde'},
-
                            ])
+
+# I create a few sample :
+
+
 
 
 

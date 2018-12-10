@@ -1,2 +1,6 @@
 class MedicationOrder < ApplicationRecord
+
+
+
+
 end
