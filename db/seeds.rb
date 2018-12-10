@@ -133,17 +133,26 @@ treatments = Treatment.create([
 
 # I create a few order_frequencies
 order_frecuencies = OrderFrequency.create([
-                                  {value: '3', unit: 'hour'},
-                                  {value: '4', unit: 'hour'},
-                                  {value: '1', unit: 'hour'},
-                                  {value: '6', unit: 'hour'},
-                                  {value: '4', unit: 'hour'},
-                                  {value: '5', unit: 'hour'},
-                                  {value: '2', unit: 'hour'},
-                              ])
+                                              {value: '3', unit: 'hour'},
+                                              {value: '4', unit: 'hour'},
+                                              {value: '1', unit: 'hour'},
+                                              {value: '6', unit: 'hour'},
+                                              {value: '4', unit: 'hour'},
+                                              {value: '5', unit: 'hour'},
+                                              {value: '2', unit: 'hour'},
+                                          ])
 
 
 # I create a few medication_orders (¿tiene un campo order_frecuency_id?)
+medication_orders = MedicationOrder.create([
+                                               {name: 'Acetaminophen', unit: 'mg', dosage: '500', route: 'PO', order_frequency_id: '1'},
+                                               {name: 'Naproxen', unit: 'mg', dosage: '500', route: 'PO', order_frequency_id: '2'},
+                                               {name: 'Ibuprofen', unit: 'mg', dosage: '200', route: 'IM', order_frequency_id: '3'},
+                                               {name: 'Tylenol', unit: 'mg', dosage: '125', route: 'IM', order_frequency_id: '4'},
+                                               {name: 'Advil', unit: 'mg', dosage: '250', route: 'SC', order_frequency_id: '5'},
+                                               {name: 'Motrin', unit: 'mg', dosage: '125', route: 'SC', order_frequency_id: '6'},
+                                               {name: 'Aspirin', unit: 'mg', dosage: '250', route: 'PO', order_frequency_id: '7'},
+                                           ])
 
 
 # I create a few diagnostic_procedures
