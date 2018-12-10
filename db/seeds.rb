@@ -132,6 +132,18 @@ treatments = Treatment.create([
 
 
 # I create a few order_frequencies
+order_frecuencies = OrderFrequency.create([
+                                  {value: '3', unit: 'hour'},
+                                  {value: '4', unit: 'hour'},
+                                  {value: '1', unit: 'hour'},
+                                  {value: '6', unit: 'hour'},
+                                  {value: '4', unit: 'hour'},
+                                  {value: '5', unit: 'hour'},
+                                  {value: '2', unit: 'hour'},
+                              ])
+
+
+# I create a few medication_orders (¿tiene un campo order_frecuency_id?)
 
 
 # I create a few diagnostic_procedures
@@ -168,6 +180,7 @@ diagnostic_procedures = DiagnosticProcedure.create([
                                                        {description: 'TB (Tuberculosis) Skin Test', moment: Time.now},
                                                        {description: 'Ultrasound', moment: Time.now},
                                                    ])
+
 
 # I create ONE Admission sample:
 
