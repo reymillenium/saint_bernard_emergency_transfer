@@ -3,11 +3,57 @@
   <component name="ChangeListManager">
     <list default="true" id="c96bdf67-fd19-4ee0-a334-33bba22cf035" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/patients_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/patients_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/patients/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/patients/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20181208163038_create_patients.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20181208163038_create_patients.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/SingleCartoonDogsMuzzleNata_9-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/default2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/icons/home1.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/icons/saint bernard/favicon1.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/icons/saint bernard/favicon2.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/icons/syringe.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/0d2294fd06acc5e00d028351040d5f79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/SingleCartoonDogsMuzzleNata_9-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/picture14482539194816.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/saint_bernard_face_274X274.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/android-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/android-icon-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/android-icon-36x36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/android-icon-48x48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/android-icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/android-icon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/apple-icon-114x114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/apple-icon-120x120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/apple-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/apple-icon-152x152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/apple-icon-180x180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/apple-icon-57x57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/apple-icon-60x60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/apple-icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/apple-icon-76x76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/apple-icon-precomposed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/favicon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/ms-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/ms-icon-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/ms-icon-310x310.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/4eddd2c3a96db28a91b3f431155e9680.ico/ms-icon-70x70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/saint_bernard_face_274X274.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/saint_bernard_face_274X274.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/saint_bernard_logo_original_800X600 - Copy.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/saint_bernard_logo_original_800X600.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/saint_nernard_face.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/st.bernard-sports-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/st.bernard-sports_png/st.bernard-sports-logo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/stbernard2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logos/stbernard3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/st.bernard-sports-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -50,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -59,16 +105,16 @@
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="49">
-              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+              <caret line="124" selection-start-line="124" selection-end-line="124" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/patients/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="128" column="41" selection-start-line="128" selection-start-column="41" selection-end-line="128" selection-end-column="41" />
+            <state relative-caret-position="228">
+              <caret line="118" column="43" selection-start-line="118" selection-start-column="43" selection-end-line="118" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -95,8 +141,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/patients/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="306">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#4;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#p#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#p#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -142,6 +228,7 @@
       <find>new pa</find>
       <find>saint</find>
       <find>gender</find>
+      <find>saint</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Work\Projects\2018\kipu_homework\saint_bernard_emergency_transfer\storage</dir>
@@ -189,7 +276,6 @@
         <option value="$PROJECT_DIR$/app/views/patients/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
@@ -201,6 +287,7 @@
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/controllers/patients_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/patients/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -253,6 +340,13 @@
               <item name="saint_bernard_emergency_transfer" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saint_bernard_emergency_transfer" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
@@ -419,12 +513,12 @@
       <workItem from="1544063992356" duration="78000" />
       <workItem from="1544064675921" duration="21782000" />
       <workItem from="1544133283008" duration="77448000" />
-      <workItem from="1544332370215" duration="42425000" />
+      <workItem from="1544332370215" duration="43703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144818000" />
+    <option name="totallyTimeSpent" value="146096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -673,27 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="58" lean-forward="true" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6296#6302#0#HTML" expanded="true" />
-            <element signature="e#6439#6445#0#HTML" expanded="true" />
-            <element signature="e#6535#6541#0#HTML" expanded="true" />
-            <element signature="e#6585#6591#0#HTML" expanded="true" />
-            <element signature="e#6679#6685#0#HTML" expanded="true" />
-            <element signature="e#6728#6734#0#HTML" expanded="true" />
-            <element signature="e#6734#6740#0#HTML" expanded="true" />
-            <element signature="e#6740#6746#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -763,14 +836,14 @@
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
-          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
         </state>
       </provider>
     </entry>
@@ -801,17 +874,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/patients/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/patients/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="128" column="41" selection-start-line="128" selection-start-column="41" selection-end-line="128" selection-end-column="41" />
+        <state relative-caret-position="228">
+          <caret line="118" column="43" selection-start-line="118" selection-start-column="43" selection-end-line="118" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -831,6 +897,51 @@
             <element signature="n#style#0;n#td#9;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#form#0;n#td#9;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/patients/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#p#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#p#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
     </entry>
