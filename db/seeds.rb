@@ -120,6 +120,20 @@ allergies = Allergy.create([
                                {description: 'hypersensitivity to the formaldehyde'},
                            ])
 
+# I create a few treatments
+treatments = Treatment.create([
+                                      {description: 'temporary bracing the right leg', necessity: 'restrict the motion.'},
+                                      {description: 'temporary bracing the left leg', necessity: 'restrict the motion.'},
+                                      {description: 'temporary bracing the right arm', necessity: 'restrict the motion.'},
+                                      {description: 'temporary bracing the left arm', necessity: 'restrict the motion.'},
+                                      {description: 'temporary bracing the right shoulder', necessity: 'restrict the motion.'},
+                                      {description: 'temporary bracing the left shoulder', necessity: 'restrict the motion.'},
+                                  ])
+
+
+
+# I create a few order_frequencies
+
 
 # I create ONE Admission sample:
 
