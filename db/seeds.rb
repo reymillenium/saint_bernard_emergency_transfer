@@ -120,7 +120,49 @@ allergies = Allergy.create([
                                {description: 'hypersensitivity to the formaldehyde'},
                            ])
 
-# I create a few sample :
+
+# I create ONE Admission sample:
+
+
+# I create ONE sample Patient:
+patients = Patient.create([
+                              # Patient # 1
+                              {
+                                  first_name: 'Thomas',
+                                  middle_name: '',
+                                  last_name: 'Schudel',
+                                  mr: '30997',
+                                  dob: DateTime.strptime("09/01/1978 17:00", "%m/%d/%Y %H:%M"),
+                                  gender: 'male',
+
+                                  # * Needs to exist at least one Admission on the DB before seeding this model
+                                  admission_id: '1',
+
+                                  # An array of allergies (each Allergy has a description text field)
+                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
+                                  allergies: 'hypersensitivity to aspirin or NSAIDs',
+
+                                  # chronic_conditions (An array of Diagnosis)
+                                  # chronic_conditions: [''],
+                                  chronic_conditions: 'An array of Diagnosis',
+
+                                  # medications (An array of MedicationOrders])
+                                  # medications: [''],
+                                  medications: 'An array of MedicationOrders',
+
+                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
+                                  # diagnostic_procedures: [''],
+                                  diagnostic_procedures: 'An array of DiagnosticProcedures',
+
+                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
+                                  # diagnoses: [''],
+                                  diagnoses: 'Another array of Diagnosis',
+
+                                  # treatments (An array of Treatments)
+                                  # treatments: ['']
+                                  treatments: 'An array of Treatments'
+                              },
+                          ])
 
 
 

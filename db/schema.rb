@@ -89,8 +89,14 @@ ActiveRecord::Schema.define(version: 2018_12_09_002104) do
     t.string "last_name"
     t.string "mr"
     t.datetime "dob"
-    t.string "gender", default: "female"
+    t.integer "gender", default: 1
     t.integer "admission_id"
+    t.text "allergies"
+    t.string "chronic_conditions"
+    t.string "medications"
+    t.string "diagnostic_procedures"
+    t.string "diagnoses"
+    t.string "treatments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

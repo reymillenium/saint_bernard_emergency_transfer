@@ -130,9 +130,10 @@ class PatientsController < ApplicationController
   private
 
   def patient_params
-    # params.require(:patient).permit(:picture, :description, :likes_counter)
-    params.require(:patient).permit :picture, :description, :likes_counter
-    # params.require(:patient).permit({picture: []}, :description, :likes_counter)
+    params.require(:patient).permit :first_name, :middle_name, :last_name, :mr, :dob, :gender, :admission, :allergies,
+                                    :chronic_conditions, :medications, :diagnostic_procedures, :diagnoses, :treatments
+
+    # params.require(:patient).permit(:medications, medications: [])
   end
 
   # Implementamos el callback set_patient, que se va a ejecutar antes de cada acción en que lo necesitemos (show, edit, update and destroy)
