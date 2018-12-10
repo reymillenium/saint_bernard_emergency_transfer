@@ -57,7 +57,15 @@ symptoms = Symptom.create([
                               {description: 'Pain in the right ankle'}
                           ])
 
-# I create a few sample :
+# I create a few sample observations:
+observations = Observation.create([
+                              {description: 'The patients looks a little nervous', moment: Time.now},
+                              {description: 'Coloration change in the affected area', moment: Time.now},
+                              {description: 'Do not touch the affected area', moment: Time.now},
+                              {description: 'The patient can not lift heavy weights', moment: Time.now},
+                              {description: 'The patient needs rest', moment: Time.now},
+                          ])
+
 
 
 
