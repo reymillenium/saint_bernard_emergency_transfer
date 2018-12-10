@@ -122,18 +122,52 @@ allergies = Allergy.create([
 
 # I create a few treatments
 treatments = Treatment.create([
-                                      {description: 'temporary bracing the right leg', necessity: 'restrict the motion.'},
-                                      {description: 'temporary bracing the left leg', necessity: 'restrict the motion.'},
-                                      {description: 'temporary bracing the right arm', necessity: 'restrict the motion.'},
-                                      {description: 'temporary bracing the left arm', necessity: 'restrict the motion.'},
-                                      {description: 'temporary bracing the right shoulder', necessity: 'restrict the motion.'},
-                                      {description: 'temporary bracing the left shoulder', necessity: 'restrict the motion.'},
-                                  ])
-
+                                  {description: 'temporary bracing the right leg', necessity: 'restrict the motion.'},
+                                  {description: 'temporary bracing the left leg', necessity: 'restrict the motion.'},
+                                  {description: 'temporary bracing the right arm', necessity: 'restrict the motion.'},
+                                  {description: 'temporary bracing the left arm', necessity: 'restrict the motion.'},
+                                  {description: 'temporary bracing the right shoulder', necessity: 'restrict the motion.'},
+                                  {description: 'temporary bracing the left shoulder', necessity: 'restrict the motion.'},
+                              ])
 
 
 # I create a few order_frequencies
 
+
+# I create a few diagnostic_procedures
+diagnostic_procedures = DiagnosticProcedure.create([
+                                                       {description: 'exploratory radiography', moment: Time.now},
+                                                       {description: 'exploratory scan', moment: Time.now},
+                                                       {description: 'exploratory biopsy', moment: Time.now},
+                                                       {description: 'Bone Density Test', moment: Time.now},
+                                                       {description: 'Breast Ultrasound', moment: Time.now},
+                                                       {description: 'exploratory Chest X-Ray', moment: Time.now},
+                                                       {description: 'Echocardiogram', moment: Time.now},
+                                                       {description: 'Carotid Ultrasound (Carotid Doppler)', moment: Time.now},
+                                                       {description: 'Biopsy of the Prostate and Transrectal Ultrasound', moment: Time.now},
+                                                       {description: 'Abdominal CT Scan', moment: Time.now},
+                                                       {description: 'Back X-Rays (Spine X-Rays)', moment: Time.now},
+                                                       {description: 'Blood Testing', moment: Time.now},
+                                                       {description: 'Bone Marrow Biopsy', moment: Time.now},
+                                                       {description: 'Bone Scan', moment: Time.now},
+                                                       {description: 'Bronchoscopy', moment: Time.now},
+                                                       {description: 'Electrocardiogram (EKG)', moment: Time.now},
+                                                       {description: 'Endometrial Biopsy', moment: Time.now},
+                                                       {description: 'Endoscopy', moment: Time.now},
+                                                       {description: 'Fecal Occult Blood Test', moment: Time.now},
+                                                       {description: 'Fluorescein Angiography (Test for Diabetic Retinopathy)', moment: Time.now},
+                                                       {description: 'Hysterosalpingogram', moment: Time.now},
+                                                       {description: 'Magnetic Resonance Imaging (MRI)', moment: Time.now},
+                                                       {description: 'Mediastinoscopy', moment: Time.now},
+                                                       {description: 'Oxygen Saturation Test', moment: Time.now},
+                                                       {description: 'Pap Test (Papanicolaou Smear)', moment: Time.now},
+                                                       {description: 'Prostate-Specific Antigen Blood Test (PSA Test)', moment: Time.now},
+                                                       {description: 'Rapid Strep Test', moment: Time.now},
+                                                       {description: 'Sigmoidoscopy', moment: Time.now},
+                                                       {description: 'Snellen Test for Visual Acuity', moment: Time.now},
+                                                       {description: 'TB (Tuberculosis) Skin Test', moment: Time.now},
+                                                       {description: 'Ultrasound', moment: Time.now},
+                                                   ])
 
 # I create ONE Admission sample:
 
