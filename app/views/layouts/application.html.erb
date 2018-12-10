@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="favicon.ico">
+  <!--<link rel="icon" href="favicon.ico">-->
+  <%= favicon_link_tag 'SingleCartoonDogsMuzzleNata_9-512.png' %>
+  <%#= favicon_link_tag '1e12f2d8bfaeb02f62a5e04d1c298cff.png' %>
 
   <!--<title><%#= yield('page_title') %> - Blaster.com</title>-->
   <title>Saint Bernard Emergency Transfer</title>
@@ -85,9 +87,13 @@
   <!-- Fixed Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 
-    <a class="navbar-brand  faa-parent animated-hover" href="#">
-      <i class="fa fa-film faa-float fa-fast"></i> Saint Bernard Transfer
+
+    <a class="navbar-brand  faa-parent animated-hover" href="<%= patients_path %>">
+      <%= image_tag 'logos/saint_bernard_face_274X274.png', width: '40px', height: '40px', class: 'fa fa-film faa-bounce fa-fast' %>
+      <!--      <i class="fa fa-film faa-bounce fa-fast"></i>-->
+      Saint Bernard Transfer
     </a>
+
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,13 +153,15 @@
         <!--        </a>-->
 
 
-        <a href="#" class="faa-parent animated-hover">
+        <a href="<%= patients_path %>" class="faa-parent animated-hover">
           <i class="fa fa-users faa-ring fa-slow"></i> Patients
         </a>
 
-        <a href="#" class="faa-parent animated-hover">
+        <a href="<%= new_patient_path %>" class="faa-parent animated-hover">
           <i class="fa fa-user-plus faa-ring fa-slow"></i>&nbsp;New patient
         </a>
+
+
         <a href="#" class="faa-parent animated-hover">
           <i class="fa fa-list-alt faa-ring fa-slow"></i>&nbsp;Comentarios
         </a>
