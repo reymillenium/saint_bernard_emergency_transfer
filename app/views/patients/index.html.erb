@@ -107,15 +107,12 @@
               <%= link_to patient.gender, patient %>
             </td>
 
-            <td style="text-align: center; color: red;">
-              <%= link_to (Time.now.year - patient.dob.year), patient, style: 'color: red;' %>
+            <td style="text-align: center;">
+              <%= link_to (Time.now.year - patient.dob.year), patient %>
             </td>
 
 
-            <!--          <td><%#= link_to 'Edit', edit_image_path(image) %></td>-->
-            <!--          <td><%#= link_to 'Delete', image, method: :delete, data: {confirm: 'Are you sure?'} %></td>-->
-
-
+            <!--<td><%#= link_to 'Edit', edit_image_path(image) %></td>-->
             <td style="text-align: center">
               <!--<a href="#" class="btn btn-default btn-sm btn-success faa-parent animated-hover" name="edit_user">-->
               <a href="#" class="btn btn-default btn-sm btn-success faa-parent animated-hover" name="edit_user">
@@ -126,14 +123,26 @@
               <!--</button>-->
             </td>
 
-            <td style="text-align: center">
-              <form action="#" method="POST" style="">
-                <!--{{ csrf_field() }}-->
-                <!--{{ method_field('DELETE') }}-->
-                <button id="btn_delete_post" type="submit" class="btn btn-default btn-sm btn-danger faa-parent animated-hover" name="delete_user" style="cursor: pointer;">
+            <td>
+              <%#= link_to 'Delete', image, method: :delete, data: {confirm: 'Are you sure?'} %>
+
+
+              <%= link_to patient, method: :delete, data: {confirm: 'Are you sure?'} do %>
+<!--                <button id="btn_delete_post" type="button" class="btn btn-default btn-sm btn-danger faa-parent animated-hover" name="delete_user" style="cursor: pointer;">-->
                   <i class="fa fa-trash faa-ring faa-slow"></i>
-                </button>
-              </form>
+<!--                </button>-->
+                <%#= image_tag(your_image_url) %>
+              <% end %>
+            </td>
+
+
+<!--            <td style="text-align: center">-->
+<!--              <form action="#" method="POST" style="">-->
+<!--                <button id="btn_delete_post" type="submit" class="btn btn-default btn-sm btn-danger faa-parent animated-hover" name="delete_user" style="cursor: pointer;">-->
+<!--                  <i class="fa fa-trash faa-ring faa-slow"></i>-->
+<!--                </button>-->
+<!--              </form>-->
+
               <!--<a href="{{ route('users.delete_user_script', ['user' => $user->id]) }}" class="btn btn-default btn-sm btn-danger faa-parent animated-hover" name="delete_user">-->
               <!--<i class="fa fa-trash faa-ring faa-slow"></i>-->
               <!--</a>-->
@@ -141,7 +150,8 @@
               <!--<button id="btn_delete_post" type="button" class="btn btn-default btn-sm btn-danger faa-parent animated-hover" name="delete_post">-->
               <!-- <i class="fa fa-trash faa-ring faa-slow"></i>-->
               <!--</button>-->
-            </td>
+
+<!--            </td>-->
 
           </tr>
 
