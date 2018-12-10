@@ -69,17 +69,19 @@
 
 
 
-        This <%= (Time.now.year - @patient.dob.year) %> years old <%= @patient.gender %> was admitted to Blue Alps Ski Camp emergency
+        This <%= (Time.now.year - @patient.dob.year) %> years old <%= @patient.gender %> was admitted to Blue Alps Ski
+        Camp emergency
         facility on February 18, 2018, at 5:07 pm
-        due to a fracture of upper end of the right tibia
-        (S82.101). The observed symptoms on admission were severe pain, swelling and limited bending of the joint. No
+        due to a <%= @patient.diagnoses %>. The observed symptoms on admission were <%= @patient.admission_id %>. No
         soft tissues were damaged.
-        Upon asking about known allergies, the patient disclosed hypersensitivity to aspirin or NSAIDs and gluten
-        intolerance. Upon asking about chronic conditions,
-        the patient disclosed Asthma (J45). The patient was administered with Acetaminophen 500mg PO q4hr to relieve
+        Upon asking about known allergies, the patient disclosed <%= @patient.allergies %>. Upon asking about chronic
+        conditions,
+        the patient disclosed Asthma (J45). The patient was administered with <%= @patient.medications %> Acetaminophen
+        500mg PO q4hr to relieve
         pain, and Naproxen 500mg PO q6hr to relieve
         swelling.
-        The staff performed an exploratory radiography at 5:15 pm, revealing a closed fracture in the right tibia
+        The staff performed <%= @patient.diagnostic_procedures %> an exploratory radiography at 5:15 pm, revealing a
+        closed fracture in the right tibia
         (S82.101A). Our team proceeded to temporary bracing
         the right leg to restrict the motion.
       </p>
