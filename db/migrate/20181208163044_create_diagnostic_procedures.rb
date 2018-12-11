@@ -5,6 +5,8 @@ class CreateDiagnosticProcedures < ActiveRecord::Migration[5.2]
       t.text :description
       t.datetime :moment
 
+      t.integer :patient_id
+
       t.timestamps
 
     end

@@ -16,7 +16,9 @@ class CreateMedicationOrders < ActiveRecord::Migration[5.2]
       #OR PLAIN STRING
       # t.column :route, :string, default: :PO
 
-      t.integer order_frequency_id
+      t.integer :patient_id
+
+      t.integer :order_frequency_id
 
       t.timestamps
 

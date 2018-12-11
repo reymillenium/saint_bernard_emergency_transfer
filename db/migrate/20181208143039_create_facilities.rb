@@ -3,7 +3,6 @@ class CreateFacilities < ActiveRecord::Migration[5.2]
     create_table :facilities do |t|
 
       t.string :name
-
       t.timestamps
 
     end

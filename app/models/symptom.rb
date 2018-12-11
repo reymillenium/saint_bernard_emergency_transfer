@@ -1,2 +1,3 @@
 class Symptom < ApplicationRecord
+
 end

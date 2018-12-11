@@ -8,14 +8,10 @@
 
 # I create a few sample facilities:
 facilities = Facility.create([
-                                 {name: 'Blue Alps Ski Camp'},
-                                 {name: 'International Camp Swisse'},
-                                 {name: 'Tichy Racing Camp'},
-                                 {name: 'Ligety Weibrecht Camp'},
-                                 {name: 'Keely’s Ski Camp'}
+                                 {name: 'Blue Alps Ski Camp'}
                              ])
 
-# I create a few sample diagnosis:
+# I create a few sample diagnosis: See Hangouts and modify the coding_system to make it real and
 diagnosis = Diagnosis.create([
                                  {coding_system: 'inter', code: 'S82.101A', description: 'a closed fracture in the right tibia'},
                                  {coding_system: 'inter', code: 'S82.102A', description: 'a closed fracture in the left tibia'},
@@ -192,7 +188,6 @@ diagnostic_procedures = DiagnosticProcedure.create([
 
 
 # I create ONE Admission sample:
-
 
 
 # I create ONE sample Patient:

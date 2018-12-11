@@ -18,6 +18,9 @@ class PatientsController < ApplicationController
   def transfer
     # Buscamos el Patient en la BD y lo almacenamos en una variable
     # @patient = Patient.find params[:id]
+
+    # I search the facility and it's sended to the transfer view
+    @facility = Facility.first
   end
 
   private

@@ -21,5 +21,8 @@ class MedicationOrder < ApplicationRecord
   # MedicationRoute = [:PO, :IM, :SC]
   # validates :route, inclusion: {in: MedicationRoute}
 
+  belongs_to :patient
+
+  belongs_to :order_frequency
 
 end
