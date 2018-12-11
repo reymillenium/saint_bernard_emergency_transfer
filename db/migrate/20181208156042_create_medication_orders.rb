@@ -11,6 +11,8 @@ class CreateMedicationOrders < ActiveRecord::Migration[5.2]
 
       t.decimal :dosage
 
+      t.text :necessity
+
       # USING ENUM:
       t.column :route, :integer, default: 0
       #OR PLAIN STRING

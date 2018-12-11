@@ -14,30 +14,15 @@ class CreatePatients < ActiveRecord::Migration[5.2]
       #OR PLAIN STRING
       # t.column :gender, :string, default: :female
 
-      # An array of allergies (each Allergy has a description text field)
-      # add_column :patients, :allergies, :text, array: true, default: []
-      # t.text :allergies, array: true, default: []
-      t.text :allergies
-
       # chronic_conditions (An array of Diagnosis)
-      # t.string :chronic_conditions, array: true, default: []
-      t.string :chronic_conditions
-
-      # medications (An array of MedicationOrders])
-      # t.string :medications, array: true, default: []
-      # t.string :medications
-
-      # diagnostic_procedures (An array of DiagnosticProcedures]])
-      # t.string :diagnostic_procedures, array: true, default: []
-      # t.string :diagnostic_procedures
+      # t.string :chronic_conditions
 
       # diagnoses (An array of Diagnosis)??? Difference between this and Chronic conditions???
-      # t.string :diagnoses, array: true, default: []
-      t.string :diagnoses
+      # t.string :diagnoses
 
       # treatments (An array of Treatments)
       # t.string :treatments, array: true, default: []
-      t.string :treatments
+      # t.string :treatments
 
 
       t.timestamps

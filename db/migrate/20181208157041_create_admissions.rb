@@ -5,7 +5,6 @@ class CreateAdmissions < ActiveRecord::Migration[5.2]
       t.datetime :moment
       t.integer :patient_id
 
-
       t.timestamps
     end
   end

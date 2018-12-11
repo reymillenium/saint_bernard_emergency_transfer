@@ -69,21 +69,24 @@
 
 
 
-        This <%= (Time.now.year - @patient.dob.year) %> years old <%= @patient.gender %> was admitted to Blue Alps Ski
-        Camp emergency
-        facility on February 18, 2018, at 5:07 pm
-        due to a <%= @patient.diagnoses %>. The observed symptoms on admission were <%= @patient.admission_id %>. No
-        soft tissues were damaged.
-        Upon asking about known allergies, the patient disclosed <%= @patient.allergies %>. Upon asking about chronic
+        This <%= (Time.now.year - @patient.dob.year) %> years old <%= @patient.gender %> was admitted
+        to <%= @facility.name %> emergency
+        facility on <%= localize @patient.admission.moment %>, at <%= @patient.admission.moment.time %>
+        due to a <%= @patient.admission.diagnoses.map(&:described_code).to_sentence %>. The observed symptoms on
+        admission were
+        <%= @patient.admission.symptoms.map(&:description).to_sentence %>
+        . <%= @patient.admission.observations.map(&:description).to_sentence %>
+
+        Upon asking about known allergies, the patient
+        disclosed <%= @patient.allergies.map(&:description).to_sentence %>. Upon asking
+        about chronic
         conditions,
-        the patient disclosed Asthma (J45). The patient was administered with <%= @patient.medications %> Acetaminophen
-        500mg PO q4hr to relieve
-        pain, and Naproxen 500mg PO q6hr to relieve
-        swelling.
-        The staff performed <%= @patient.diagnostic_procedures %> an exploratory radiography at 5:15 pm, revealing a
-        closed fracture in the right tibia
-        (S82.101A). Our team proceeded to temporary bracing
-        the right leg to restrict the motion.
+        the patient disclosed <%= @patient.chronic_conditions.map(&:described_code).to_sentence %>. The patient was
+        administered with <%= @patient.medications.map(&:detailed_description).to_sentence %>.
+
+        The staff performed <%= @patient.diagnostic_procedures.map(&:described_procedure).to_sentence %>, revealing
+        <%= @patient.diagnoses.map(&:described_code).to_sentence %>. Our team proceeded to
+        <%= @patient.treatments.map(&:described_necessity).to_sentence %>.
       </p>
 
 

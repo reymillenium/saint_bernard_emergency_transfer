@@ -39,13 +39,6 @@ ActiveRecord::Schema.define(version: 2018_12_11_042756) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "allergies_to_patients", force: :cascade do |t|
-    t.integer "allergy_id"
-    t.integer "patient_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "diagnoses", force: :cascade do |t|
     t.string "coding_system"
     t.string "code"
@@ -72,6 +65,7 @@ ActiveRecord::Schema.define(version: 2018_12_11_042756) do
     t.string "name"
     t.integer "unit", default: 0
     t.decimal "dosage"
+    t.text "necessity"
     t.integer "route", default: 0
     t.integer "patient_id"
     t.integer "order_frequency_id"
@@ -129,10 +123,6 @@ ActiveRecord::Schema.define(version: 2018_12_11_042756) do
     t.string "mr"
     t.datetime "dob"
     t.integer "gender", default: 1
-    t.text "allergies"
-    t.string "chronic_conditions"
-    t.string "diagnoses"
-    t.string "treatments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

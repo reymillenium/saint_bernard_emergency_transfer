@@ -25,7 +25,6 @@ class Patient < ApplicationRecord
 
   has_many :diagnoses, through: :admissions
 
-
   has_many :patient_treatments
   has_many :treatments, through: :patient_treatments
 

@@ -25,4 +25,20 @@ class MedicationOrder < ApplicationRecord
 
   belongs_to :order_frequency
 
+
+  def detailed_description
+    "#{name}, #{dosage}, #{route}, q#{frequency.value}#{frequency.unit}, to #{necessity}"
+
+  # q4hr
+
+  # MedicationOrder: Model
+  # name: String
+  # unit: MassUnit
+  # dosage: Decimal
+  # route: MedicationRoute
+  # frequency: OrderFrequency
+
+
+  end
+
 end

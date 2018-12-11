@@ -23,6 +23,10 @@ diagnosis = Diagnosis.create([
 
 # I create a few sample symptoms:
 symptoms = Symptom.create([
+                              {description: 'pain'},
+                              {description: 'swelling'},
+                              {description: 'limited bending of the joint'},
+
                               {description: 'Pain in the head'},
 
                               {description: 'Pain in the left shoulder'},
@@ -55,6 +59,7 @@ symptoms = Symptom.create([
 
 # I create a few sample observations:
 observations = Observation.create([
+                                      {description: 'No soft tissues were damaged.', moment: Time.now},
                                       {description: 'The patients looks a little nervous', moment: Time.now},
                                       {description: 'Coloration change in the affected area', moment: Time.now},
                                       {description: 'Do not touch the affected area', moment: Time.now},
@@ -64,6 +69,10 @@ observations = Observation.create([
 
 # I create a few sample allergies:
 allergies = Allergy.create([
+
+                               {description: 'hypersensitivity to aspirin or NSAIDs'},
+                               {description: 'gluten intolerance'},
+
                                # Food
                                {description: 'coffee intolerance'},
                                {description: 'flavored tea intolerance'},
@@ -82,7 +91,6 @@ allergies = Allergy.create([
                                {description: 'mango intolerance'},
                                {description: 'strawberries intolerance'},
                                {description: 'garlic intolerance'},
-                               {description: 'gluten intolerance'},
                                {description: 'milk intolerance'},
                                {description: 'lactose intolerance'},
                                {description: 'peanut intolerance'},
@@ -93,7 +101,6 @@ allergies = Allergy.create([
                                {description: 'wheat intolerance'},
 
                                # Drugs
-                               {description: 'hypersensitivity to Aspirin'},
                                {description: 'hypersensitivity to Tetracycline'},
                                {description: 'hypersensitivity to Dilantin'},
                                {description: 'hypersensitivity to Tegretol'},
@@ -119,6 +126,7 @@ allergies = Allergy.create([
 # I create a few treatments
 treatments = Treatment.create([
                                   {description: 'temporary bracing the right leg', necessity: 'restrict the motion.'},
+
                                   {description: 'temporary bracing the left leg', necessity: 'restrict the motion.'},
                                   {description: 'temporary bracing the right arm', necessity: 'restrict the motion.'},
                                   {description: 'temporary bracing the left arm', necessity: 'restrict the motion.'},
@@ -129,11 +137,12 @@ treatments = Treatment.create([
 
 # I create a few order_frequencies
 order_frecuencies = OrderFrequency.create([
+                                              {value: '4', unit: 'hour'},
+                                              {value: '6', unit: 'hour'},
+
                                               {value: '3', unit: 'hour'},
                                               {value: '4', unit: 'hour'},
                                               {value: '1', unit: 'hour'},
-                                              {value: '6', unit: 'hour'},
-                                              {value: '4', unit: 'hour'},
                                               {value: '5', unit: 'hour'},
                                               {value: '2', unit: 'hour'},
                                           ])
@@ -141,19 +150,22 @@ order_frecuencies = OrderFrequency.create([
 
 # I create a few medication_orders (¿tiene un campo order_frecuency_id?)
 medication_orders = MedicationOrder.create([
-                                               {name: 'Acetaminophen', unit: 'mg', dosage: '500', route: 'PO', order_frequency_id: '1'},
-                                               {name: 'Naproxen', unit: 'mg', dosage: '500', route: 'PO', order_frequency_id: '2'},
-                                               {name: 'Ibuprofen', unit: 'mg', dosage: '200', route: 'IM', order_frequency_id: '3'},
-                                               {name: 'Tylenol', unit: 'mg', dosage: '125', route: 'IM', order_frequency_id: '4'},
-                                               {name: 'Advil', unit: 'mg', dosage: '250', route: 'SC', order_frequency_id: '5'},
-                                               {name: 'Motrin', unit: 'mg', dosage: '125', route: 'SC', order_frequency_id: '6'},
-                                               {name: 'Aspirin', unit: 'mg', dosage: '250', route: 'PO', order_frequency_id: '7'},
+                                               {name: 'Acetaminophen', unit: 'mg', dosage: '500', necessity: 'relieve swelling', route: 'PO', order_frequency_id: '1'},
+                                               {name: 'Acetaminophen', unit: 'mg', dosage: '500', necessity: 'relieve swelling', route: 'PO', order_frequency_id: '1'},
+                                               {name: 'Naproxen', unit: 'mg', dosage: '500', necessity: 'relieve swelling', route: 'PO', order_frequency_id: '2'},
+
+                                               {name: 'Ibuprofen', unit: 'mg', dosage: '200', necessity: 'relieve swelling', route: 'IM', order_frequency_id: '3'},
+                                               {name: 'Tylenol', unit: 'mg', dosage: '125', necessity: 'relieve swelling', route: 'IM', order_frequency_id: '4'},
+                                               {name: 'Advil', unit: 'mg', dosage: '250', necessity: 'relieve swelling', route: 'SC', order_frequency_id: '5'},
+                                               {name: 'Motrin', unit: 'mg', dosage: '125', necessity: 'relieve swelling', route: 'SC', order_frequency_id: '6'},
+                                               {name: 'Aspirin', unit: 'mg', dosage: '250', necessity: 'relieve swelling', route: 'PO', order_frequency_id: '7'},
                                            ])
 
 
-# I create a few diagnostic_procedures
+# I create a few diagnostic_procedures. Personaliza hora de la entrada del seed del ejemplo. Mantener la fecha pero cambiar la hora
 diagnostic_procedures = DiagnosticProcedure.create([
                                                        {description: 'exploratory radiography', moment: Time.now},
+
                                                        {description: 'exploratory scan', moment: Time.now},
                                                        {description: 'exploratory biopsy', moment: Time.now},
                                                        {description: 'Bone Density Test', moment: Time.now},
@@ -186,10 +198,6 @@ diagnostic_procedures = DiagnosticProcedure.create([
                                                        {description: 'Ultrasound', moment: Time.now},
                                                    ])
 
-
-# I create ONE Admission sample:
-
-
 # I create ONE sample Patient:
 patients = Patient.create([
                               # Patient # 1
@@ -199,223 +207,22 @@ patients = Patient.create([
                                   last_name: 'Schudel',
                                   mr: '30997',
                                   dob: DateTime.strptime("09/01/1978 17:00", "%m/%d/%Y %H:%M"),
-                                  gender: 'male',
-
-                                  # * Needs to exist at least one Admission on the DB before seeding this model
-                                  admission_id: '1',
-
-                                  # An array of allergies (each Allergy has a description text field)
-                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
-                                  allergies: 'hypersensitivity to aspirin or NSAIDs',
-
-                                  # chronic_conditions (An array of Diagnosis)
-                                  # chronic_conditions: [''],
-                                  chronic_conditions: 'An array # 1 of Diagnosis',
-
-                                  # medications (An array of MedicationOrders])
-                                  # medications: [''],
-                                  medications: 'An array # 1 of MedicationOrders',
-
-                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
-                                  # diagnostic_procedures: [''],
-                                  diagnostic_procedures: 'An array # 1 of DiagnosticProcedures',
-
-                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
-                                  # diagnoses: [''],
-                                  diagnoses: 'Another array # 1 of Diagnosis',
-
-                                  # treatments (An array of Treatments)
-                                  # treatments: ['']
-                                  treatments: 'An array # 1 of Treatments'
-                              },
-
-                              # Patient # 2
-                              {
-                                  first_name: 'Reinier',
-                                  middle_name: '',
-                                  last_name: 'Garcia Ramos',
-                                  mr: '30998',
-                                  dob: DateTime.strptime("02/10/1980 03:00", "%m/%d/%Y %H:%M"),
-                                  gender: 'male',
-
-                                  # * Needs to exist at least one Admission on the DB before seeding this model
-                                  admission_id: '2',
-
-                                  # An array of allergies (each Allergy has a description text field)
-                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
-                                  allergies: 'hypersensitivity to Penicillin',
-
-                                  # chronic_conditions (An array of Diagnosis)
-                                  # chronic_conditions: [''],
-                                  chronic_conditions: 'An array # 2 of Diagnosis',
-
-                                  # medications (An array of MedicationOrders])
-                                  # medications: [''],
-                                  medications: 'An array # 2 of MedicationOrders',
-
-                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
-                                  # diagnostic_procedures: [''],
-                                  diagnostic_procedures: 'An array # 2 of DiagnosticProcedures',
-
-                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
-                                  # diagnoses: [''],
-                                  diagnoses: 'Another array # 2 of Diagnosis',
-
-                                  # treatments (An array of Treatments)
-                                  # treatments: ['']
-                                  treatments: 'An array # 2 of Treatments'
-                              },
-
-                              # Patient # 3
-                              {
-                                  first_name: 'Peter',
-                                  middle_name: '',
-                                  last_name: 'Shultz',
-                                  mr: '30999',
-                                  dob: DateTime.strptime("09/01/1979 14:00", "%m/%d/%Y %H:%M"),
-                                  gender: 'male',
-
-                                  # * Needs to exist at least one Admission on the DB before seeding this model
-                                  admission_id: '1',
-
-                                  # An array of allergies (each Allergy has a description text field)
-                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
-                                  allergies: 'ketchup intolerance',
-
-                                  # chronic_conditions (An array of Diagnosis)
-                                  # chronic_conditions: [''],
-                                  chronic_conditions: 'An array # 3 of Diagnosis',
-
-                                  # medications (An array of MedicationOrders])
-                                  # medications: [''],
-                                  medications: 'An array # 3 of MedicationOrders',
-
-                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
-                                  # diagnostic_procedures: [''],
-                                  diagnostic_procedures: 'An array # 3 of DiagnosticProcedures',
-
-                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
-                                  # diagnoses: [''],
-                                  diagnoses: 'Another array # 3 of Diagnosis',
-
-                                  # treatments (An array of Treatments)
-                                  # treatments: ['']
-                                  treatments: 'An array # 3 of Treatments'
-                              },
-
-                              # Patient # 4
-                              {
-                                  first_name: 'Amanda',
-                                  middle_name: '',
-                                  last_name: 'Gomez',
-                                  mr: '31000',
-                                  dob: DateTime.strptime("09/01/1983 17:00", "%m/%d/%Y %H:%M"),
-                                  gender: 'female',
-
-                                  # * Needs to exist at least one Admission on the DB before seeding this model
-                                  admission_id: '1',
-
-                                  # An array of allergies (each Allergy has a description text field)
-                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
-                                  allergies: 'paprika intolerance',
-
-                                  # chronic_conditions (An array of Diagnosis)
-                                  # chronic_conditions: [''],
-                                  chronic_conditions: 'An array # 4 of Diagnosis',
-
-                                  # medications (An array of MedicationOrders])
-                                  # medications: [''],
-                                  medications: 'An array # 4 of MedicationOrders',
-
-                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
-                                  # diagnostic_procedures: [''],
-                                  diagnostic_procedures: 'An array # 4 of DiagnosticProcedures',
-
-                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
-                                  # diagnoses: [''],
-                                  diagnoses: 'Another array # 4 of Diagnosis',
-
-                                  # treatments (An array of Treatments)
-                                  # treatments: ['']
-                                  treatments: 'An array # 4 of Treatments'
-                              },
-
-                              # Patient # 5
-                              {
-                                  first_name: 'Drake',
-                                  middle_name: '',
-                                  last_name: 'Johnson',
-                                  mr: '31001',
-                                  dob: DateTime.strptime("09/01/1959 17:00", "%m/%d/%Y %H:%M"),
-                                  gender: 'male',
-
-                                  # * Needs to exist at least one Admission on the DB before seeding this model
-                                  admission_id: '1',
-
-                                  # An array of allergies (each Allergy has a description text field)
-                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
-                                  allergies: 'hypersensitivity to the dog hair',
-
-                                  # chronic_conditions (An array of Diagnosis)
-                                  # chronic_conditions: [''],
-                                  chronic_conditions: 'An array # 5 of Diagnosis',
-
-                                  # medications (An array of MedicationOrders])
-                                  # medications: [''],
-                                  medications: 'An array # 5 of MedicationOrders',
-
-                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
-                                  # diagnostic_procedures: [''],
-                                  diagnostic_procedures: 'An array # 5 of DiagnosticProcedures',
-
-                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
-                                  # diagnoses: [''],
-                                  diagnoses: 'Another array # 5 of Diagnosis',
-
-                                  # treatments (An array of Treatments)
-                                  # treatments: ['']
-                                  treatments: 'An array # 5 of Treatments'
-                              },
-
-                              # Patient # 6
-                              {
-                                  first_name: 'Florence',
-                                  middle_name: '',
-                                  last_name: 'Smith',
-                                  mr: '31002',
-                                  dob: DateTime.strptime("09/01/1985 19:00", "%m/%d/%Y %H:%M"),
-                                  gender: 'female',
-
-                                  # * Needs to exist at least one Admission on the DB before seeding this model
-                                  admission_id: '1',
-
-                                  # An array of allergies (each Allergy has a description text field)
-                                  # allergies: ['hypersensitivity to aspirin or NSAIDs', ' and gluten intolerance'],
-                                  allergies: 'peanut intolerance',
-
-                                  # chronic_conditions (An array of Diagnosis)
-                                  # chronic_conditions: [''],
-                                  chronic_conditions: 'An array # 6 of Diagnosis',
-
-                                  # medications (An array of MedicationOrders])
-                                  # medications: [''],
-                                  medications: 'An array # 6 of MedicationOrders',
-
-                                  # diagnostic_procedures (An array of DiagnosticProcedures]])
-                                  # diagnostic_procedures: [''],
-                                  diagnostic_procedures: 'An array # 6 of DiagnosticProcedures',
-
-                                  # diagnoses (Another array of Diagnosis)??? Difference between this and Chronic conditions???
-                                  # diagnoses: [''],
-                                  diagnoses: 'Another array # 6 of Diagnosis',
-
-                                  # treatments (An array of Treatments)
-                                  # treatments: ['']
-                                  treatments: 'An array # 6 of Treatments'
-                              },
-
-
+                                  gender: 'male'
+                              }
                           ])
+
+
+# I create ONE Admission sample:
+admissions = Admission.create([
+                                  # Admission # 1
+                                  {
+                                      moment: Time.now,
+                                      patient_id: 1,
+                                  }
+                              ])
+
+
+
 
 
 
