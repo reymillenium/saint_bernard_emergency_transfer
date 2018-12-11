@@ -4,14 +4,11 @@ Rails.application.routes.draw do
   # Changing the default main page (root)
   get '/', to: 'patients#index'
 
-  resources :images
-
-  # I create my first ROR route, to see how it works
-  # get 'greetings_page', to: 'greeting#show_greetings'
-
-  resources :patients
+  resources :patients, only: [:index] do
+    get 'transfer'
+  end
 
   # Other functionalities
-  get 'about', to: 'saint_bernard#about'
+  get 'about', to: 'about#show'
 
 end
