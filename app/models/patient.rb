@@ -17,13 +17,14 @@ class Patient < ApplicationRecord
 
 
   has_many :patient_diagnoses
-  has_many :chronic_conditions, through: :patient_diagnoses, class_name: 'Diagnosis'
+  has_many :chronic_conditions, through: :patient_diagnoses, class_name: 'Diagnosis', source: :diagnosis
 
   has_many :medications, class_name: 'MedicationOrder'
 
   has_many :diagnostic_procedures
 
-  has_many :diagnoses, through: :admissions
+  # has_many :diagnoses, through: :admissions
+  has_many :diagnoses, through: :admission
 
   has_many :patient_treatments
   has_many :treatments, through: :patient_treatments

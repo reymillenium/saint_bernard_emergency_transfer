@@ -27,18 +27,8 @@ class MedicationOrder < ApplicationRecord
 
 
   def detailed_description
-    "#{name}, #{dosage}, #{route}, q#{frequency.value}#{frequency.unit}, to #{necessity}"
-
-  # q4hr
-
-  # MedicationOrder: Model
-  # name: String
-  # unit: MassUnit
-  # dosage: Decimal
-  # route: MedicationRoute
-  # frequency: OrderFrequency
-
-
+    # "#{name}, #{dosage}, #{route}, q#{frequency.value}#{frequency.unit}, to #{necessity}"
+    "#{name}, #{dosage}, #{route}, q#{order_frequency.value}#{order_frequency.unit}, to #{necessity}"
   end
 
 end
