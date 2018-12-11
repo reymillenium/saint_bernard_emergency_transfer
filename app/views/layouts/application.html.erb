@@ -61,6 +61,9 @@
   <!--  <link href="general_style.css" rel="stylesheet">-->
   <%= stylesheet_link_tag "general_style" %>
 
+  <!-- About style-->
+  <%= stylesheet_link_tag "hover_effect_style_demo_07" %>
+
   <!-- Custom styles for the Sticky footer navbar -->
   <!--  <link href="sticky-footer-navbar.css" rel="stylesheet">-->
   <%= stylesheet_link_tag "sticky-footer-navbar" %>
@@ -71,7 +74,7 @@
 
   <!-- Custom sidenav style for the Fixed SideBar -->
   <!--  <link rel="stylesheet" href="sidenav_style.css.scss">-->
-  <%= stylesheet_link_tag "sidenav_style" %>
+  <%#= stylesheet_link_tag "sidenav_style" %>
 
   <!-- Custom style for the Checkboxes -->
   <!--  <link rel="stylesheet" href="checkbox_style.css">-->
@@ -106,27 +109,28 @@
       <ul class="navbar-nav mr-auto">
 
         <li class="nav-item active" style="margin-left: 15px; text-decoration: none">
-          <a href="<%= patients_path %>" class="faa-parent animated-hover">
+
+          <a href="<%= patients_path %>" class="nav-link faa-parent animated-hover">
             <!--            <i class="fa fa-users faa-ring fa-slow"></i>-->
             <%= image_tag 'icons/patients_female_and_male_64X64_16bit.png', width: '24px', height: '24px', class: 'fa faa-ring fa-slow' %>
             Patients
           </a>
 
-          <!--                  <a class="nav-link faa-parent animated-hover" href="<%#= patients_path %>">-->
-          <!--                    <span class="sr-only fa fa-user">(current)</span>-->
-          <!--                    <span class="fa fa-users faa-ring fa-fast"></span>-->
-          <!--                    Patients-->
-          <!--                  </a>-->
+          <!--                            <a class="nav-link faa-parent animated-hover" href="<%#= patients_path %>">-->
+          <!--                              <span class="sr-only fa fa-user">(current)</span>-->
+          <!--                              <span class="fa fa-users faa-ring fa-fast"></span>-->
+          <!--                              Patients-->
+          <!--                            </a>-->
 
 
         </li>
 
-        <li class="nav-item" style="margin-left: 20px; text-decoration: none">
+        <li class="nav-item active" style="margin-left: 20px; text-decoration: none">
           <!--Este accede a la ruta, mas no permite que se anime la imagen interna del link-->
           <%#= link_to controller: "saint_bernard", action: "about", class: "faa-parent animated-hover" do %>
 
           <%#= link_to "show", controller: "about", action: "show", class: "faa-parent animated-hover" do %>
-            <%= link_to about_path, class: "faa-parent animated-hover" do %>
+          <%= link_to about_path, class: "nav-link faa-parent animated-hover" do %>
             <!--            <i class="fa fa-users faa-ring fa-slow"></i>-->
             <%= image_tag 'icons/About-me-icon_32X32.png', width: '24px', height: '24px', class: 'fa faa-ring fa-slow' %>
             &nbsp;About
@@ -155,28 +159,16 @@
 </header>
 
 <!-- Page content -->
-<main role="main" class="container" style="margin-left: 0; width: auto">
+<main class="container">
 
-  <div class="row mt-3" style="padding: 0; width: 100%;  margin-left: 0px;">
+  <div class="row mt-3">
 
     <div class="content col-12" style="padding: 0">
-
       <%= yield %>
-
     </div>
 
-
-    <!--    @section('sidebar')-->
-    <!--    <div class="col-1">-->
-    <!--      <div class="sidenav">-->
-
-
-    <!--      </div>-->
-    <!--    </div>-->
-    <!--    @show-->
-
-
   </div>
+
 </main>
 <!-- / Page content -->
 
