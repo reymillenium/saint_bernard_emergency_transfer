@@ -27,8 +27,7 @@ class MedicationOrder < ApplicationRecord
 
 
   def detailed_description
-    # "#{name}, #{dosage}, #{route}, q#{frequency.value}#{frequency.unit}, to #{necessity}"
-    "#{name}, #{dosage}, #{route}, q#{order_frequency.value}#{order_frequency.unit}, to #{necessity}"
+    "#{name} #{dosage.round}#{unit} #{route} q#{order_frequency.value}#{order_frequency.unit === 'hour' ? 'hr' : order_frequency.unit} to #{necessity}"
   end
 
 end

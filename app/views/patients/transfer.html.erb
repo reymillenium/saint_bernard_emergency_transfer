@@ -64,31 +64,41 @@
       <h4 class="card-title">Summary</h4>
 
       <p style="text-align: justify">
+        This <%= (Time.now.year - @patient.dob.year) %> years old <%= @patient.gender %>
+        was admitted to <%= @facility.name %> emergency facility
+        on <%= @patient.admission.moment.strftime("%B, %d, %Y") %>, at <%= @patient.admission.moment.strftime("%-I:%M %p") %> due to
 
-        <%= @patient.middle_name %>
+        <!-- {{patient.admission.diagnoses described_code | comma_separate}} OK -->
+        <%= @patient.admission.diagnoses.map(&:described_code).to_sentence %>
 
-
-
-        This <%= (Time.now.year - @patient.dob.year) %> years old <%= @patient.gender %> was admitted
-        to <%= @facility.name %> emergency
-        facility on <%= localize @patient.admission.moment %>, at <%= @patient.admission.moment.time %>
-        due to a <%= @patient.admission.diagnoses.map(&:described_code).to_sentence %>. The observed symptoms on
-        admission were
+        . The observed symptoms on admission were
         <%= @patient.admission.symptoms.map(&:description).to_sentence %>
-        . <%= @patient.admission.observations.map(&:description).to_sentence %>
-
-        Upon asking about known allergies, the patient
-        disclosed <%= @patient.allergies.map(&:description).to_sentence %>. Upon asking
-        about chronic
-        conditions,
-        the patient disclosed <%= @patient.chronic_conditions.map(&:described_code).to_sentence %>. The patient was
-        administered with <%= @patient.medications.map(&:detailed_description).to_sentence %>.
-
-        The staff performed <%= @patient.diagnostic_procedures.map(&:described_procedure).to_sentence %>, revealing
-        <%= @patient.diagnoses.map(&:described_code).to_sentence %>. Our team proceeded to
-        <%= @patient.treatments.map(&:described_necessity).to_sentence %>.
+        . <%= @patient.admission.observations.map(&:description).to_sentence %>.
       </p>
 
+      <p style="text-align: justify">
+        Upon asking about known allergies, the patient disclosed
+        <%= @patient.allergies.map(&:description).to_sentence %>
+
+        . Upon asking about chronic conditions, the patient disclosed
+
+        <!-- {{patient.chronic_conditions > described_code | comma_separated}}-->
+        <%= @patient.chronic_conditions.map(&:described_code).to_sentence %>
+
+        . The patient was administered with
+        <%= @patient.medications.map(&:detailed_description).to_sentence %>.
+      </p>
+
+      <p style="text-align: justify">
+        The staff performed <%= @patient.diagnostic_procedures.map(&:described_procedure).to_sentence %>
+        , revealing
+
+        <!-- {{patient.diagnoses > described_code | comma_separate}} -->
+        <%= @patient.diagnoses.map(&:described_code).to_sentence %>
+
+        . Our team proceeded to
+        <%= @patient.treatments.map(&:described_necessity).to_sentence %>.
+      </p>
 
     </div>
 
