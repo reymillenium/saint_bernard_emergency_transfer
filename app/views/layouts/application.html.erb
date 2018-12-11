@@ -159,7 +159,7 @@
 
         <a href="<%= patients_path %>" class="faa-parent animated-hover">
           <!--<i class="fa fa-users faa-ring fa-slow"></i>-->
-          <%= image_tag 'icons/Patients-icon_32x32.png', width: '24px', height: '24px', class: 'fa faa-ring fa-slow' %>
+          <%= image_tag 'icons/patients_female_and_male_64X64_16bit.png', width: '24px', height: '24px', class: 'fa faa-ring fa-slow' %>
           Patients
         </a>
 
@@ -171,16 +171,27 @@
 
 
         <a href="#" class="faa-parent animated-hover">
-          <i class="fa fa-list-alt faa-ring fa-slow"></i>&nbsp;Comentarios
+          <i class="fa fa-list-alt faa-ring fa-slow"></i>&nbsp;Facilities
         </a>
-        <a href="#" class="faa-parent animated-hover">
-          &nbsp;<i class="fa fa-phone faa-ring fa-slow"></i>&nbsp;Contactos
-        </a>
-        <a href="#" class="faa-parent animated-hover">
-          <!--&nbsp;<i class="fa fa-info faa-ring fa-slow"></i>-->
+
+<!--        <a href="#" class="faa-parent animated-hover">-->
+<!--          &nbsp;<i class="fa fa-info faa-ring fa-slow"></i>-->
+          <%#= image_tag 'icons/About-me-icon_32X32.png', width: '24px', height: '24px', class: 'fa faa-ring fa-slow' %>
+<!--          &nbsp;About-->
+<!--        </a>-->
+
+        <%#= link_to "About", controller: "saint_bernard", action: "about" %>
+
+
+        <!--Este accede a la ruta, mas no permite que se anime la imagen interna del link-->
+        <%#= link_to controller: "saint_bernard", action: "about", class: "faa-parent animated-hover" do %>
+
+        <%= link_to "about", controller: "saint_bernard", action: "about", class: "faa-parent animated-hover" do %>
           <%= image_tag 'icons/About-me-icon_32X32.png', width: '24px', height: '24px', class: 'fa faa-ring fa-slow' %>
           &nbsp;About
-        </a>
+        <% end %>
+
+
       </div>
     </div>
     <!--    @show-->

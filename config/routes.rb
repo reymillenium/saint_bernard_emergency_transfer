@@ -7,12 +7,11 @@ Rails.application.routes.draw do
   resources :images
 
   # I create my first ROR route, to see how it works
-  get 'greetings_page', to: 'greeting#show_greetings'
+  # get 'greetings_page', to: 'greeting#show_greetings'
 
   resources :patients
 
-    # A temporal theory. Didn't worked!
-    # get 'emergency_transfer_summary', to: 'patient#emergency_transfer_summary'
-
+  # Other functionalities
+  get 'about', to: 'saint_bernard#about'
 
 end

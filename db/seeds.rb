@@ -194,6 +194,7 @@ diagnostic_procedures = DiagnosticProcedure.create([
 # I create ONE Admission sample:
 
 
+
 # I create ONE sample Patient:
 patients = Patient.create([
                               # Patient # 1
