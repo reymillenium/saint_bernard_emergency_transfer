@@ -1,4 +1,5 @@
 class CreateDiagnosticProcedures < ActiveRecord::Migration[5.2]
+
   def change
     create_table :diagnostic_procedures do |t|
 
@@ -11,4 +12,5 @@ class CreateDiagnosticProcedures < ActiveRecord::Migration[5.2]
 
     end
   end
+
 end

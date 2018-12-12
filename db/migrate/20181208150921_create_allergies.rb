@@ -1,4 +1,5 @@
 class CreateAllergies < ActiveRecord::Migration[5.2]
+
   def change
     create_table :allergies do |t|
 
@@ -8,4 +9,5 @@ class CreateAllergies < ActiveRecord::Migration[5.2]
 
     end
   end
+
 end

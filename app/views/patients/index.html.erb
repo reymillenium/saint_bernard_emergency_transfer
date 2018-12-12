@@ -8,29 +8,19 @@
 
   <div class="card-body">
 
-    <!--@if(!$users->isEmpty())-->
-
-    <!-- División de Tabla -->
+    <!-- Table -->
     <div id="div_tabla_id" class="div_tabla">
 
       <table id="tbl_id" cellspacing="0" cellpadding="0" class="standard-light-blue" style="width: 100%;">
-        <!--<table id="tbl_id" cellspacing="0" cellpadding="0" class="new-style">-->
 
-
-        <!-- Cabecera de la Tabla -->
         <thead>
         <tr style="text-align: left;">
-          <!--hola-->
         </tr>
         </thead>
-        <!-- Fin de Cabecera de la Tabla -->
 
-        <!-- Cuerpo de la Tabla -->
         <tbody>
 
-
         <tr>
-
           <th>ID</th>
           <th>First name</th>
           <th>Last name</th>
@@ -40,12 +30,9 @@
           <th>Age</th>
           <th></th>
           </th>
-
         </tr>
 
-        <!--@forelse($users as $user)-->
         <% @patients.each do |patient| %>
-
           <tr>
             <td style="text-align: center;">
               <%= patient.id %>
@@ -63,10 +50,10 @@
               <%= patient.mr %>
             </td>
 
-            <!-- Usando action-->
             <td style="text-align: center;">
               <%= patient.dob.year %>
             </td>
+
             <td style="text-align: center;">
               <%= patient.gender %>
             </td>
@@ -75,50 +62,25 @@
               <%= (Time.now.year - patient.dob.year) %>
             </td>
 
-
             <td>
               <%= link_to patient_transfer_path(patient), class: 'btn btn-primary btn-sm faa-parent animated-hover' do %>
                 <i class="fa fa-arrow-right faa-horizontal faa-slow"></i>
-                <%#= image_tag(your_image_url) %>
               <% end %>
             </td>
-
           </tr>
-
-          <!--@empty-->
-          <!--<p>No hay usuarios registrados</p>-->
-          <!--@endforelse-->
-
-
         <% end %>
 
         </tbody>
-        <!-- Fin de Cuerpo de la Tabla  -->
 
-        <!-- Pie de Tabla -->
         <tfoot>
         <tr>
-          <!--<td> (Pie de la tabla) </td>-->
         </tr>
         </tfoot>
-        <!-- Fin de Pie de Tabla -->
 
       </table>
+
     </div>
-    <!-- Fin de la División de Tabla -->
-
-    <!--@else-->
-    <!-- users Is Empty -->
-
-    <!--<div class='alert alert-danger' role='alert'>-->
-    <!--<p class="text-danger">No hay usuarios registrados !!</p>-->
-    <!--</div>-->
-
-    <!--@endif-->
 
   </div>
-  <!-- /Card Body -->
-
 
 </div>
-<!-- /Card -->

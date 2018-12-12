@@ -1,4 +1,5 @@
 class CreatePatientTreatments < ActiveRecord::Migration[5.2]
+
   def change
     create_table :patient_treatments do |t|
 
@@ -6,6 +7,8 @@ class CreatePatientTreatments < ActiveRecord::Migration[5.2]
       t.integer :treatment_id
 
       t.timestamps
+
     end
   end
+
 end

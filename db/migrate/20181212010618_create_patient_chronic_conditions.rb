@@ -1,6 +1,6 @@
 class CreatePatientChronicConditions < ActiveRecord::Migration[5.2]
-  def change
 
+  def change
     # Used for the patient_chronic conditions or chronic diagnoses, of the 2nd paragraph
     create_table :patient_chronic_conditions do |t|
 
@@ -8,6 +8,8 @@ class CreatePatientChronicConditions < ActiveRecord::Migration[5.2]
       t.integer :diagnosis_id
 
       t.timestamps
+
     end
   end
+
 end
