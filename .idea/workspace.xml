@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c96bdf67-fd19-4ee0-a334-33bba22cf035" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -41,7 +41,17 @@
     <favorites_list name="saint_bernard_emergency_transfer" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="379" column="82" lean-forward="true" selection-start-line="379" selection-start-column="82" selection-end-line="379" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,7 +116,6 @@
         <option value="$PROJECT_DIR$/app/models/patient_diagnosis.rb" />
         <option value="$PROJECT_DIR$/app/models/chronic_condition.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20181212010618_create_chronic_conditions.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/general_style.css" />
         <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
@@ -144,10 +153,11 @@
         <option value="$PROJECT_DIR$/db/migrate/20181211042756_create_patient_treatments.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20181212010618_create_patient_chronic_conditions.rb" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -161,6 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,60 +193,12 @@
             <path>
               <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
               <item name="saint_bernard_emergency_transfer" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="saint_bernard_emergency_transfer" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-              <item name="alertifyjs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="saint_bernard_emergency_transfer" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="saint_bernard_emergency_transfer" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="saint_bernard_emergency_transfer" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="about" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="saint_bernard_emergency_transfer" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="saint_bernard_emergency_transfer" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="patients" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="saint_bernard_emergency_transfer" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
               <item name="saint_bernard_emergency_transfer" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="saint_bernard_emergency_transfer" type="b2602c69:ProjectViewProjectNode" />
@@ -247,7 +210,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,16 +334,18 @@
       <workItem from="1544467987070" duration="32422000" />
       <workItem from="1544546921372" duration="40770000" />
       <workItem from="1544588931515" duration="582000" />
+      <workItem from="1544590848313" duration="1769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232758000" />
+    <option name="totallyTimeSpent" value="234527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.18305598" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919486" weight="0.1860817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info id="Favorites" order="2" sideWeight="0.50080514" side_tool="true" weight="0.1633888" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -432,13 +396,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/patients_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/admission.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -793,6 +750,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
           <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="379" column="82" lean-forward="true" selection-start-line="379" selection-start-column="82" selection-end-line="379" selection-end-column="82" />
         </state>
       </provider>
     </entry>
