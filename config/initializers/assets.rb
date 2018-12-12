@@ -27,6 +27,4 @@ Rails.application.config.assets.precompile += %w( sticky-footer-navbar.css )
 Rails.application.config.assets.precompile += %w( tablesStyles.css )
 Rails.application.config.assets.precompile += %w( checkbox_style.css )
 
-# About style
-Rails.application.config.assets.precompile += %w( hover_effect_style_demo_07.css )
 

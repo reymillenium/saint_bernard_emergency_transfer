@@ -4,5 +4,4 @@ class Diagnosis < ApplicationRecord
     "#{description} (#{code})"
   end
 
-
 end

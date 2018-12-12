@@ -15,12 +15,12 @@
     <div class="card" style="padding: 0px">
       <!--<h4 class="card-title pb-1">Transferring Facility</h4>-->
       <div class="row" style="padding-left: 5px">
-        <div class="col-2" style="border-right: 1px solid #DFDFDF">
+        <div class="col-3" style="border-right: 1px solid #DFDFDF">
           <b>Name</b>
           <br>
           <%= @facility.name %>
         </div>
-        <div class="col-10" style="border-left: 1px solid #DFDFDF"></div>
+        <div class="col-9" style="border-left: 1px solid #DFDFDF"></div>
       </div>
     </div>
 
@@ -30,7 +30,7 @@
 
     <div class="card" style="padding: 0px">
       <div class="row" style="padding-left: 5px">
-        <div class="col-2" style="border-right: 1px solid #DFDFDF;">
+        <div class="col-3" style="border-right: 1px solid #DFDFDF;">
           <b>First Name</b>
           <br>
           <%= @patient.first_name %>
@@ -55,7 +55,7 @@
         </div>
 
 
-        <div class="col-4" style="border-left: 1px solid #DFDFDF"></div>
+        <div class="col-3" style="border-left: 1px solid #DFDFDF"></div>
       </div>
     </div>
 
@@ -66,7 +66,8 @@
       <p style="text-align: justify">
         This <%= (Time.now.year - @patient.dob.year) %> years old <%= @patient.gender %>
         was admitted to <%= @facility.name %> emergency facility
-        on <%= @patient.admission.moment.strftime("%B, %d, %Y") %>, at <%= @patient.admission.moment.strftime("%-I:%M %p") %> due to
+        on <%= @patient.admission.moment.strftime("%B, %d, %Y") %>,
+        at <%= @patient.admission.moment.strftime("%-I:%M %p") %> due to
 
         <!-- {{patient.admission.diagnoses described_code | comma_separate}} OK -->
         <%#= @patient.admission.diagnoses.map(&:described_code).to_sentence %>
@@ -76,8 +77,6 @@
         <%= @patient.admission.symptoms.map(&:description).to_sentence %>
         . <%= @patient.admission.observations.map(&:description).to_sentence %>.
       </p>
-
-
 
 
       <p style="text-align: justify">
@@ -93,8 +92,6 @@
         . The patient was administered with
         <%= @patient.medications.map(&:detailed_description).to_sentence %>.
       </p>
-
-
 
 
       <p style="text-align: justify">
@@ -115,7 +112,7 @@
   </div>
   <!--/Card-Body-->
 
-  <div class="card-footer">
+  <div class="card-footer d-print-none">
     <p>
 
       <a class="btn btn-default btn-danger faa-parent animated-hover" style="text-decoration: none;" href="<%= patients_path %>">

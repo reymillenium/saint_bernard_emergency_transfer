@@ -1,10 +1,9 @@
-/*
-
-************************************************************************************************************************
-                                   *** GENERAL DESIGN OF THE TEMPLATE ***
-                                             By: Reinier Garcia
-************************************************************************************************************************
-*/
+/**/
+/**********************************************************************************************************************/
+/*                 * * *    G E N E R A L    D E S I G N    O F    T H E    T E M P L A T E   * * *                   */
+/*                                                                                                                    */
+/*                                  B Y :   R E I N I E R    G A R C I A    ( 2 0 1 8 )                               */
+/**********************************************************************************************************************/
 
 body {
     /* Muestra el scroll vertical en todas las páginas. Así evitamos cambios visuales en el diseño */
@@ -24,115 +23,99 @@ main.container {
     right: 0px;
 }
 
-/* Los enlaces */
-a {
-    text-decoration: none;
-}
 
+/**********************************************************************************************************************/
+/*                        C U S T O M    S T Y L E    F O R    M Y    A B O U T    V I E W                            */
+/**********************************************************************************************************************/
 
-
-
-
-/* About style*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*body {*/
-    /*margin:0;*/
-    /*padding:0;*/
-    /*font-family:sans-serif;*/
-    /*background:#fbfbfb;*/
-/*}*/
 
 .card#about {
-    position:absolute;
+    position: absolute;
     margin-top: 20%;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:300px;
-    min-height:400px;
-    background:#fff;
-    box-shadow:0 20px 50px rgba(0,0,0,.1);
-    border-radius:10px;
-    transition:0.5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    min-height: 400px;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    transition: 0.5s;
 }
+
 .card#about:hover {
-    box-shadow:0 30px 70px rgba(0,0,0,.2);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, .2);
 }
+
 .card#about .box {
-    position:absolute;
-    top:50%;
-    left:0;
-    transform:translateY(-50%);
-    text-align:center;
-    padding:20px;
-    box-sizing:border-box;
-    width:100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
 }
+
 .card#about .box .img {
-    width:120px;
-    height:120px;
-    margin:0 auto;
-    border-radius:50%;
-    overflow:hidden;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
 }
+
 .card#about .box .img img {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
+
 .card#about .box h2 {
-    font-size:20px;
-    color:#262626;
-    margin:20px auto;
+    font-size: 20px;
+    color: #262626;
+    margin: 20px auto;
 }
+
 .card#about .box h2 span {
-    font-size:14px;
-    background:#e91e63;
-    color:#fff;
-    display:inline-block;
-    padding:4px 10px;
-    border-radius:15px;
+    font-size: 14px;
+    background: #e91e63;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 15px;
 }
+
 .card#about .box p {
-    color:#262626;
+    color: #262626;
 }
+
 .card#about .box span {
-    display:inline-flex;
+    display: inline-flex;
 }
+
 .card#about .box ul {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
+
 .card#about .box ul li {
-    list-style:none;
-    float:left;
+    list-style: none;
+    float: left;
 }
+
 .card#about .box ul li a {
-    display:block;
-    color:#aaa;
-    margin:0 10px;
-    font-size:20px;
-    transition:0.5s;
-    text-align:center;
+    display: block;
+    color: #aaa;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    text-align: center;
 }
+
 .card#about .box ul li:hover a {
-    color:#e91e63;
-    transform:rotateY(360deg);
+    color: #e91e63;
+    transform: rotateY(360deg);
 }
 
 .card#about {

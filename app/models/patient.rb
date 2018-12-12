@@ -10,8 +10,6 @@ class Patient < ApplicationRecord
   # GENDERS = [:male, :female, :other]
   # validates :gender, inclusion: {in: GENDERS}
 
-
-
   has_many :patient_allergies
   has_many :allergies, through: :patient_allergies
 
@@ -19,23 +17,8 @@ class Patient < ApplicationRecord
 
   has_many :diagnostic_procedures
 
-
   has_many :patient_treatments
   has_many :treatments, through: :patient_treatments
-
-
-  # Used for the diagnosis list of the 1st paragraph
-  # has_many :diagnoses, through: :admissions
-  #
-  # Last version before last change:
-  # has_many :diagnoses, through: :admission
-
-  # Used for the diagnosis list of the 3rd paragraph
-  # has_many :patient_diagnoses
-  # has_many :chronic_conditions, through: :patient_diagnoses, class_name: 'Diagnosis', source: :diagnosis
-
-
-  # My NEW VERSION NOW!!!
 
   # Used for the diagnosis list of the 1st paragraph
   has_one :admission
@@ -44,13 +27,8 @@ class Patient < ApplicationRecord
   has_many :patient_chronic_conditions
   has_many :chronic_conditions, through: :patient_chronic_conditions, class_name: 'Diagnosis', source: :diagnosis
 
-
   # Used for the diagnosis list of the 3rd paragraph. Diagnoses obtained on the facility
   has_many :patient_diagnoses
   has_many :diagnoses, through: :patient_diagnoses
-
-
-
-
 
 end

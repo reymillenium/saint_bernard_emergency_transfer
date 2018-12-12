@@ -10,7 +10,4 @@ class Admission < ApplicationRecord
 
   has_many :observations
 
-
-
-
 end

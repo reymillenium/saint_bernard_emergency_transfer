@@ -1,35 +1,30 @@
 class PatientsController < ApplicationController
 
-  # Estipulamos un callback para ejecutarse antes de cada acción en que lo necesitemos (show, edit, update and destroy)
+  # I set a callback to be executed before each actions that needs it (show only in this case)
   before_action :set_patient, only: [:transfer]
-
 
   # ********************************************************************************************************************
   # *                                           *** R E N D E R ***                                                    *
   # ********************************************************************************************************************
 
-  # Muestra el listado de todas los Patients  en la BD
+  # Shows the index view, with the list of all the Patients in the DB
   def index
-    # Creo una variable y allí almaceno todas los Patient en la BD
+    # I store in a variable all the Patients in the DB
     @patients = Patient.all
   end
 
-  # Muestra la vista con los datos de un Patient
+  # Shows the show view, with all the data of one selected Patient
   def transfer
-    # Buscamos el Patient en la BD y lo almacenamos en una variable
-    # @patient = Patient.find params[:id]
-
-    # I search the facility and it's sended to the transfer view
+    # I search the facility and it's sended also to the transfer view
     @facility = Facility.first
   end
 
   private
 
-  # Implementamos el callback set_patient, que se va a ejecutar antes de cada acción en que lo necesitemos (show, edit, update and destroy)
+  # Implementation of the Callback set_patient, to be executed  before each actions that needs it (show only in this case)
   def set_patient
-    # Buscamos el Patient original en la Bd a partir del ID que estamos recibiendo
+    # It search the Patient in the DB by using the patient_id that it is receiving
     @patient = Patient.find params[:patient_id]
   end
-
 
 end

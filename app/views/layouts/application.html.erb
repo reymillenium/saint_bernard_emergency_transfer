@@ -2,85 +2,47 @@
 <html lang="en">
 <head>
 
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <!--<link rel="icon" href="favicon.ico">-->
   <%= favicon_link_tag 'logos/saint_bernard_face_165X165.png' %>
-  <%#= favicon_link_tag '1e12f2d8bfaeb02f62a5e04d1c298cff.png' %>
 
   <title>Saint Bernard Emergency Transfer</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
-
-  <%#= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-
-
-  <!-- Bootstrap core CSS -->
-  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
-  <!--        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
-  <%#= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" %>
-
-  <!--   Esta versión de bootstrap permite mostrar bien los formularios (La anterior no)-->
-  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" crossorigin="anonymous">-->
+  <!-- Bootstrap core CSS for display rendering -->
   <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" %>
 
-  <!-- Font Awesome Core -->
-  <!--  <link rel="stylesheet" href="font-awesome.css">-->
-  <%= stylesheet_link_tag "font-awesome-4.7.0/css/font-awesome" %>
-  <%#= stylesheet_link_tag "/app/assets/fonts/font-awesome-4.7.0/css/font-awesome.css" %>
+  <!-- Bootstrap core CSS for printing -->
+  <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css", media: 'print' %>
 
-  <!-- Alertify: include the core style -->
-  <!--  <link rel="stylesheet" href="alertifyjs/css/alertify.min.css"/>-->
+  <!-- Font Awesome Core -->
+  <%= stylesheet_link_tag "font-awesome-4.7.0/css/font-awesome" %>
+
+  <!-- Alertify: includes the core style -->
   <%= stylesheet_link_tag "alertifyjs/css/alertify.min" %>
 
-  <!-- Alertify: include a theme (default in this case) -->
-  <!--  <link rel="stylesheet" href="alertifyjs/css/themes/default.min.css"/>-->
+  <!-- Alertify: include a theme (default theme in this case) -->
   <%= stylesheet_link_tag "alertifyjs/css/themes/default.min" %>
 
-  <!-- Alertify: include a theme (semantic in this case. It's bigger) -->
-  <!--  <link rel="stylesheet" href="alertifyjs/css/themes/semantic.min.css"/>-->
-
-  <!-- Alertify: include a theme (Bootstrap in this case.) -->
-  <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.min.css"/>
-
-  <!-- Alertify: include a theme (default rtl in this case.) -->
-  <!--  <link rel="stylesheet" href="alertifyjs/css/themes/default.rtl.min.css"/>-->
-
   <!-- Font Awesome Animated Icons -->
-  <!--  <link rel="stylesheet" href="font-awesome-animation.css">-->
   <%= stylesheet_link_tag "font-awesome-animation" %>
 
-  <!-- Custom General Style for the template -->
-  <!--  <link href="general_style.css" rel="stylesheet">-->
+  <!-- Custom General Style for the app  -->
   <%= stylesheet_link_tag "general_style" %>
 
-  <!-- About style-->
-  <%= stylesheet_link_tag "hover_effect_style_demo_07" %>
-
   <!-- Custom styles for the Sticky footer navbar -->
-  <!--  <link href="sticky-footer-navbar.css" rel="stylesheet">-->
   <%= stylesheet_link_tag "sticky-footer-navbar" %>
 
   <!-- Custom table styles for the tables -->
-  <!--  <link rel="stylesheet" href="tablesStyles.css">-->
   <%= stylesheet_link_tag "tablesStyles" %>
 
-  <!-- Custom sidenav style for the Fixed SideBar -->
-  <!--  <link rel="stylesheet" href="sidenav_style.css.scss">-->
-  <%#= stylesheet_link_tag "sidenav_style" %>
-
   <!-- Custom style for the Checkboxes -->
-  <!--  <link rel="stylesheet" href="checkbox_style.css">-->
   <%= stylesheet_link_tag "checkbox_style" %>
 
   <!--  pretty checkbox CDN, A pure CSS library to beautify checkbox and radio buttons!-->
-  <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>-->
   <%= stylesheet_link_tag "https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" %>
 
 </head>
@@ -91,79 +53,40 @@
   <!-- Fixed Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 
-
     <a class="navbar-brand  faa-parent animated-hover" href="<%= patients_path %>">
-      <%#= image_tag 'logos/saint_bernard_chest_274X274.png', width: '40px', height: '40px', class: 'fa faa-bounce fa-fast' %>
       <%= image_tag 'logos/saint_bernard_chest_274X274.png', width: '40px', height: '40px', class: 'fa faa-flash fa-fast' %>
-      <!--      <i class="fa fa-film faa-bounce fa-fast"></i>-->
       Saint Bernard Transfer
     </a>
 
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-
         <li class="nav-item active" style="margin-left: 15px; text-decoration: none">
-
           <a href="<%= patients_path %>" class="nav-link faa-parent animated-hover">
-            <!--            <i class="fa fa-users faa-ring fa-slow"></i>-->
             <%= image_tag 'icons/patients_female_and_male_64X64_16bit.png', width: '24px', height: '24px', class: 'fa faa-ring fa-slow' %>
             Patients
           </a>
-
-          <!--                            <a class="nav-link faa-parent animated-hover" href="<%#= patients_path %>">-->
-          <!--                              <span class="sr-only fa fa-user">(current)</span>-->
-          <!--                              <span class="fa fa-users faa-ring fa-fast"></span>-->
-          <!--                              Patients-->
-          <!--                            </a>-->
-
-
         </li>
 
         <li class="nav-item active" style="margin-left: 20px; text-decoration: none">
-          <!--Este accede a la ruta, mas no permite que se anime la imagen interna del link-->
-          <%#= link_to controller: "saint_bernard", action: "about", class: "faa-parent animated-hover" do %>
-
-          <%#= link_to "show", controller: "about", action: "show", class: "faa-parent animated-hover" do %>
           <%= link_to about_path, class: "nav-link faa-parent animated-hover" do %>
-            <!--            <i class="fa fa-users faa-ring fa-slow"></i>-->
             <%= image_tag 'icons/About-me-icon_32X32.png', width: '24px', height: '24px', class: 'fa faa-ring fa-slow' %>
-            <!--&nbsp;About-->
             About
           <% end %>
-
-
         </li>
-
-
       </ul>
-
-<!--            <form class="form-inline mt-2 mt-md-0">-->
-<!--              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
-<!--              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-<!--            </form>-->
-
     </div>
+
   </nav>
   <!-- / Fixed Navbar -->
 </header>
 
 <!-- Page content -->
 <main class="container">
-
   <div class="row mt-3">
-
     <div class="content col-12" style="padding: 0">
       <%= yield %>
     </div>
-
   </div>
-
 </main>
 <!-- / Page content -->
 
@@ -182,24 +105,14 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"-->
-<!--        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"-->
-<!--        crossorigin="anonymous"></script>-->
 <%= javascript_include_tag 'https://code.jquery.com/jquery-3.2.1.slim.min.js' %>
 
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"-->
-<!--        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"-->
-<!--        crossorigin="anonymous"></script>-->
 <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' %>
 
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"-->
-<!--        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"-->
-<!--        crossorigin="anonymous"></script>-->
 <%= javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' %>
 
-<!-- ** Dirección del fichero .js del plugin Alertify ** -->
+<!-- ** JavaScript file for the Alertify Plugin  ** -->
 <script type="text/javascript" src="alertifyjs/alertify.min.js"></script>
-<%#= javascript_include_tag '' %>
 
 
 <!-- Application JavaScript Files
