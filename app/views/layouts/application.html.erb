@@ -11,7 +11,6 @@
   <%= favicon_link_tag 'logos/saint_bernard_face_165X165.png' %>
   <%#= favicon_link_tag '1e12f2d8bfaeb02f62a5e04d1c298cff.png' %>
 
-  <!--<title><%#= yield('page_title') %> - Blaster.com</title>-->
   <title>Saint Bernard Emergency Transfer</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
@@ -94,7 +93,8 @@
 
 
     <a class="navbar-brand  faa-parent animated-hover" href="<%= patients_path %>">
-      <%= image_tag 'logos/saint_bernard_chest_274X274.png', width: '40px', height: '40px', class: 'fa fa-film faa-bounce fa-fast' %>
+      <%#= image_tag 'logos/saint_bernard_chest_274X274.png', width: '40px', height: '40px', class: 'fa faa-bounce fa-fast' %>
+      <%= image_tag 'logos/saint_bernard_chest_274X274.png', width: '40px', height: '40px', class: 'fa faa-flash fa-fast' %>
       <!--      <i class="fa fa-film faa-bounce fa-fast"></i>-->
       Saint Bernard Transfer
     </a>
@@ -177,7 +177,7 @@
   <div class="container">
     <a href="http://reiniergarcia.com" style="text-decoration: none; left: 200px !important;">
             <span class="text-muted faa-parent animated-hover">
-                <span class="fa fa-copyright faa-ring fa-slow"></span> All Copyrights Reserved BlasterSoft: <%= Time.now.strftime("%Y") %>
+                <span class="fa fa-copyright faa-ring fa-slow"></span> All Copyrights Reserved Reinier Garcia: <%= Time.now.strftime("%Y") %>
             </span>
     </a>
   </div>
