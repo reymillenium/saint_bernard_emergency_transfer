@@ -10,5 +10,4 @@ class OrderFrequency < ApplicationRecord
   # FrequencyUnit = [:hour]
   # validates :unit, inclusion: {in: FrequencyUnit}
 
-
 end

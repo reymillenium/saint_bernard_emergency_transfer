@@ -25,6 +25,6 @@ Rails.application.config.assets.precompile += %w( font-awesome-animation.css )
 Rails.application.config.assets.precompile += %w( general_style.css )
 Rails.application.config.assets.precompile += %w( sticky-footer-navbar.css )
 Rails.application.config.assets.precompile += %w( tablesStyles.css )
-Rails.application.config.assets.precompile += %w( sidenav_style.css )
 Rails.application.config.assets.precompile += %w( checkbox_style.css )
+
 

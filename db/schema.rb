@@ -10,22 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_09_002104) do
+ActiveRecord::Schema.define(version: 2018_12_12_010618) do
+
+  create_table "admission_diagnoses", force: :cascade do |t|
+    t.integer "admission_id"
+    t.integer "diagnosis_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "admission_symptoms", force: :cascade do |t|
+    t.integer "admission_id"
+    t.integer "symptom_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "admissions", force: :cascade do |t|
+    t.datetime "moment"
+    t.integer "patient_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "allergies", force: :cascade do |t|
     t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "allergies_to_patients", force: :cascade do |t|
-    t.integer "allergy_id"
-    t.integer "patient_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -41,6 +50,7 @@ ActiveRecord::Schema.define(version: 2018_12_09_002104) do
   create_table "diagnostic_procedures", force: :cascade do |t|
     t.text "description"
     t.datetime "moment"
+    t.integer "patient_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -51,15 +61,14 @@ ActiveRecord::Schema.define(version: 2018_12_09_002104) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "images", force: :cascade do |t|
-    t.string "picture"
-    t.string "description"
-    t.integer "likes_counter"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "medication_orders", force: :cascade do |t|
+    t.string "name"
+    t.integer "unit", default: 0
+    t.decimal "dosage"
+    t.text "necessity"
+    t.integer "route", default: 0
+    t.integer "patient_id"
+    t.integer "order_frequency_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -74,11 +83,42 @@ ActiveRecord::Schema.define(version: 2018_12_09_002104) do
   create_table "observations", force: :cascade do |t|
     t.text "description"
     t.datetime "moment"
+    t.integer "admission_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "order_frequencies", force: :cascade do |t|
+    t.string "value"
+    t.integer "unit", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "patient_allergies", force: :cascade do |t|
+    t.integer "patient_id"
+    t.integer "allergy_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "patient_chronic_conditions", force: :cascade do |t|
+    t.integer "patient_id"
+    t.integer "diagnosis_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "patient_diagnoses", force: :cascade do |t|
+    t.integer "patient_id"
+    t.integer "diagnosis_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "patient_treatments", force: :cascade do |t|
+    t.integer "patient_id"
+    t.integer "treatment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -90,13 +130,6 @@ ActiveRecord::Schema.define(version: 2018_12_09_002104) do
     t.string "mr"
     t.datetime "dob"
     t.integer "gender", default: 1
-    t.integer "admission_id"
-    t.text "allergies"
-    t.string "chronic_conditions"
-    t.string "medications"
-    t.string "diagnostic_procedures"
-    t.string "diagnoses"
-    t.string "treatments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -21,5 +21,12 @@ class MedicationOrder < ApplicationRecord
   # MedicationRoute = [:PO, :IM, :SC]
   # validates :route, inclusion: {in: MedicationRoute}
 
+  belongs_to :patient
+
+  belongs_to :order_frequency
+
+  def detailed_description
+    "#{name} #{dosage.round}#{unit} #{route} q#{order_frequency.value}#{order_frequency.unit === 'hour' ? 'hr' : order_frequency.unit} to #{necessity}"
+  end
 
 end

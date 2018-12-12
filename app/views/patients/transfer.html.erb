@@ -1,0 +1,114 @@
+<div class="card bg-light text-dark">
+
+  <div class="card-header" style="padding: 5px">
+    <h3 class="pb-1">Emergency Transfer Summary (Form 34L-D)</h3>
+  </div>
+
+  <div class="card-body" style="padding: 0px">
+
+
+    <div class="card" style="padding: 5px">
+      <h4 class="card-title pb-1">Transferring Facility</h4>
+    </div>
+
+    <div class="card" style="padding: 0px">
+      <div class="row" style="padding-left: 5px">
+        <div class="col-3" style="border-right: 1px solid #DFDFDF">
+          <b>Name</b>
+          <br>
+          <%= @facility.name %>
+        </div>
+        <div class="col-9" style="border-left: 1px solid #DFDFDF"></div>
+      </div>
+    </div>
+
+    <div class="card" style="padding: 5px">
+      <h4 class="card-title pb-1">Patient Information</h4>
+    </div>
+
+    <div class="card" style="padding: 0px">
+      <div class="row" style="padding-left: 5px">
+        <div class="col-3" style="border-right: 1px solid #DFDFDF;">
+          <b>First Name</b>
+          <br>
+          <%= @patient.first_name %>
+        </div>
+        <div class="col-2" style="border-right: 1px solid #DFDFDF; border-left: 1px solid #DFDFDF;">
+          <b>Middle Name</b>
+          <br>
+          <%= @patient.middle_name %>
+        </div>
+        <div class="col-2" style="border-right: 1px solid #DFDFDF; border-left: 1px solid #DFDFDF;">
+          <b>Last Name</b>
+          <br>
+          <%= @patient.last_name %>
+        </div>
+        <div class="col-2" style="border-right: 1px solid #DFDFDF; border-left: 1px solid #DFDFDF;">
+          <b>
+            Medical Record
+            (MR)
+          </b>
+          <br>
+          <%= @patient.mr %>
+        </div>
+
+        <div class="col-3" style="border-left: 1px solid #DFDFDF"></div>
+      </div>
+    </div>
+
+    <div class="card" style="padding-left: 5px; padding-right: 5px">
+
+      <h4 class="card-title">Summary</h4>
+
+      <p style="text-align: justify">
+        This <%= (Time.now.year - @patient.dob.year) %> years old <%= @patient.gender %>
+        was admitted to <%= @facility.name %> emergency facility
+        on <%= @patient.admission.moment.strftime("%B, %d, %Y") %>,
+        at <%= @patient.admission.moment.strftime("%-I:%M %p") %> due to
+
+        <!-- {{patient.admission.diagnoses described_code | comma_separate}} OK -->
+        <%= @patient.admission.diagnoses.map(&:described_code).to_sentence %>. The observed symptoms on admission were
+        <%= @patient.admission.symptoms.map(&:description).to_sentence %>.
+        <%= @patient.admission.observations.map(&:description).to_sentence %>.
+      </p>
+
+      <p style="text-align: justify">
+        Upon asking about known allergies, the patient disclosed
+        <%= @patient.allergies.map(&:description).to_sentence %>. Upon asking about chronic conditions, the patient
+        disclosed
+
+        <!-- {{patient.chronic_conditions > described_code | comma_separated}}-->
+        <%= @patient.chronic_conditions.map(&:described_code).to_sentence %>.
+        The patient was administered with
+        <%= @patient.medications.map(&:detailed_description).to_sentence %>.
+      </p>
+
+      <p style="text-align: justify">
+        The staff performed <%= @patient.diagnostic_procedures.map(&:described_procedure).to_sentence %>,
+        revealing
+
+        <!-- {{patient.diagnoses > described_code | comma_separate}} -->
+        <%= @patient.diagnoses.map(&:described_code).to_sentence %>. Our team proceeded to
+        <%= @patient.treatments.map(&:described_necessity).to_sentence %>.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="card-footer d-print-none">
+    <p>
+      <a class="btn btn-default btn-danger faa-parent animated-hover" style="text-decoration: none;" href="<%= patients_path %>">
+        <i class="fa fa-arrow-left faa-horizontal fa-fast"></i>
+        Go back
+      </a>
+
+      <button class="btn btn-default btn-info faa-parent animated-hover" style="text-decoration: none;" onclick="window.print()">
+        <i class="fa fa-print faa-horizontal fa-fast"></i>
+        &nbsp;&nbsp;Print&nbsp;&nbsp;&nbsp;&nbsp;
+      </button>
+    </p>
+
+  </div>
+
+</div>
