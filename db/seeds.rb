@@ -36,15 +36,17 @@ admissions = Admission.create([
                                   }
                               ])
 
-# I create a few sample diagnosis: See Hangouts and modify the coding_system to make it real and
+# I create a few sample diagnosis:
 diagnosis = Diagnosis.create([
-                                 # Exercise example, as patient.admission.diagnoses (first diagnosis)
+                                 # Exercise examples:
+                                 #
+                                 # Exercise example, as patient.admission.diagnoses (first Diagnosis List) 1st Paragraph
                                  {coding_system: 'inter', code: 'S82.101', description: 'a fracture of upper end of the right tibia'},
-
-                                 # Exercise example, as patient.diagnoses (second diagnosis)
+                                 # Exercise example, as patient.chronic_conditions (Second diagnosis List) 2nd Paragraph
+                                 {coding_system: 'inter', code: 'J45', description: 'Asthma'},
+                                 # Exercise example, as patient.diagnoses (3rd Diagnosis List) 3rd Paragraph
                                  {coding_system: 'inter', code: 'S82.101A', description: 'a closed fracture in the right tibia'},
 
-                                 {coding_system: 'inter', code: 'S82.103A', description: 'a closed fracture in the right femur '},
                                  {coding_system: 'inter', code: 'S82.104A', description: 'a closed fracture in the left femur '},
                                  {coding_system: 'inter', code: 'S82.105A', description: 'a closed fracture in the right fibula '},
                                  {coding_system: 'inter', code: 'S82.106A', description: 'a closed fracture in the left fibula '}
@@ -238,10 +240,11 @@ diagnostic_procedures = DiagnosticProcedure.create([
 
 #
 admission_diagnoses = AdmissionDiagnosis.create([
+                                                    # Exercise example, as patient.admission.diagnoses (first Diagnosis List) 1st Paragraph
                                                     {admission_id: 1, diagnosis_id: 1},
                                                 ])
 
-#
+# Used for the Diagnosis of the 3er paragrapgh
 admission_symptoms = AdmissionSymptom.create([
                                                  # Exercise example
                                                  {admission_id: 1, symptom_id: 1},
@@ -255,9 +258,16 @@ patient_allergies = PatientAllergy.create([
                                               {patient_id: 1, allergy_id: 2},
                                           ])
 
-#
+
+# Used for Diagnosis list of the 2nd paragraph
+patient_chronic_conditions = PatientChronicCondition.create([
+                                                                {patient_id: 1, diagnosis_id: 2},
+                                                            ])
+
+
+# Used for Diagnosis list of the 3rd paragraph
 patient_diagnoses = PatientDiagnosis.create([
-                                                {patient_id: 1, diagnosis_id: 2},
+                                                {patient_id: 1, diagnosis_id: 3},
                                             ])
 
 #
