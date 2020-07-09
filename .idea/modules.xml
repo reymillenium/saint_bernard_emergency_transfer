@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../ror_beauty_salon_mayde/ror_beauty_salon_mayde/.idea/ror_beauty_salon_mayde.iml" filepath="$PROJECT_DIR$/../../ror_beauty_salon_mayde/ror_beauty_salon_mayde/.idea/ror_beauty_salon_mayde.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/saint_bernard_emergency_transfer.iml" filepath="$PROJECT_DIR$/.idea/saint_bernard_emergency_transfer.iml" />
     </modules>
   </component>
